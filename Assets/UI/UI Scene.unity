@@ -783,6 +783,7 @@ GameObject:
   - component: {fileID: 875684220}
   - component: {fileID: 875684219}
   - component: {fileID: 875684222}
+  - component: {fileID: 875684223}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -908,6 +909,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &875684223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875684218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf9c421b405b8340b02ebd2d68604e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialTimeInSeconds: 120
+  _currentTimeInSeconds: 0
 --- !u!1 &1024025581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,8 +1262,9 @@ GameObject:
   - component: {fileID: 1411235786}
   - component: {fileID: 1411235789}
   - component: {fileID: 1411235788}
+  - component: {fileID: 1411235790}
   m_Layer: 5
-  m_Name: Points
+  m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,7 +1287,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 17.099998, y: 8.13}
+  m_SizeDelta: {x: 0, y: 8.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411235788
 MonoBehaviour:
@@ -1372,6 +1388,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411235785}
   m_CullTransparentMesh: 1
+--- !u!114 &1411235790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411235785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 0
 --- !u!1 &1606049982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1730,7 @@ GameObject:
   - component: {fileID: 1725984632}
   - component: {fileID: 1725984634}
   - component: {fileID: 1725984633}
+  - component: {fileID: 1725984635}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1766,6 +1797,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725984631}
   m_CullTransparentMesh: 1
+--- !u!114 &1725984635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725984631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e610ba8f5eaf1474c9d066aacec9ad0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer: {fileID: 875684223}
+  _text: {fileID: 1411235788}
 --- !u!1 &1920846557
 GameObject:
   m_ObjectHideFlags: 0
