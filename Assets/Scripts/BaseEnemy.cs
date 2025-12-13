@@ -5,7 +5,8 @@ public class BaseEnemy : MonoBehaviour
     public enum EnemyStates
     {
         Idle,
-        Approaching
+        Approaching,
+        Attacking
     }
 
     [Header("Key Enemy Values")]
@@ -16,6 +17,12 @@ public class BaseEnemy : MonoBehaviour
     public Transform Player;
     public float StoppingDistance = 5.0f;
     public float PursuingSpeed = 10.0f;
+
+    [Header("Attacking Behavior")]
+    public float AttackDuration = 1.0f;
+    public float TimeBetweenAttacks = 2.5f;
+    public float _timeAttackCounter = 0f;
+    public float _timeBetweenAttackCounter = 0f;
 
     private Vector2 _vectorToPlayer;
     
@@ -48,7 +55,25 @@ public class BaseEnemy : MonoBehaviour
         //stop the player (for now) if the enemy is close enough to the  player
         if(_vectorToPlayer.magnitude <= StoppingDistance)
         {
-            CurrentEnemyState = EnemyStates.Idle;
+            if(_timeBetweenAttackCounter > TimeBetweenAttacks)
+            {
+                Debug.Log("Trying to Attack");
+                _timeBetweenAttackCounter = 0f;
+                _timeAttackCounter = AttackDuration;
+                CurrentEnemyState = EnemyStates.Attacking;
+            }
+
+            else if(_timeAttackCounter > 0)
+            {
+                _timeAttackCounter -= Time.fixedDeltaTime;
+            }
+
+            else
+            {
+                _timeAttackCounter = 0f;
+                _timeBetweenAttackCounter += Time.fixedDeltaTime;
+                CurrentEnemyState = EnemyStates.Idle;
+            }
         }
 
         //else run at the enemy
