@@ -308,8 +308,9 @@ GameObject:
   m_Component:
   - component: {fileID: 384914104}
   - component: {fileID: 384914103}
+  - component: {fileID: 384914105}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,6 +386,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384914105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384914102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276461487395fc74098dc73368fdf61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _currentHealth: 100
 --- !u!1 &417710942
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +920,7 @@ GameObject:
   - component: {fileID: 1024025584}
   - component: {fileID: 1024025583}
   m_Layer: 5
-  m_Name: Health Bar Gaugue
+  m_Name: Health Bar Gauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -943,7 +958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.04431629, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1056,7 +1071,7 @@ GameObject:
   - component: {fileID: 1293487526}
   - component: {fileID: 1293487525}
   m_Layer: 5
-  m_Name: Health Bar Gaugue
+  m_Name: Health Bar Gauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1094,7 +1109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1129,8 +1144,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1345053471}
   - component: {fileID: 1345053470}
+  - component: {fileID: 1345053472}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1206,6 +1222,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345053472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345053469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276461487395fc74098dc73368fdf61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _currentHealth: 100
 --- !u!1 &1411235785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1609,7 @@ GameObject:
   - component: {fileID: 1670178606}
   - component: {fileID: 1670178608}
   - component: {fileID: 1670178607}
+  - component: {fileID: 1670178609}
   m_Layer: 5
   m_Name: Health Bar Backing Enemy
   m_TagString: Untagged
@@ -1644,6 +1675,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670178605}
   m_CullTransparentMesh: 1
+--- !u!114 &1670178609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670178605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa16f4e49bed1424ebfd40a48841891a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 384914105}
+  _guage: {fileID: 1293487525}
 --- !u!1 &1725984631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,6 +1777,7 @@ GameObject:
   - component: {fileID: 1920846558}
   - component: {fileID: 1920846560}
   - component: {fileID: 1920846559}
+  - component: {fileID: 1920846561}
   m_Layer: 5
   m_Name: Health Bar Backing Player
   m_TagString: Untagged
@@ -1797,6 +1843,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920846557}
   m_CullTransparentMesh: 1
+--- !u!114 &1920846561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920846557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa16f4e49bed1424ebfd40a48841891a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stats: {fileID: 1345053472}
+  _guage: {fileID: 1024025583}
 --- !u!1 &2124028975
 GameObject:
   m_ObjectHideFlags: 0
