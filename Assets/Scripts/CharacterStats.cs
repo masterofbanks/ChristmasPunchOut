@@ -14,4 +14,34 @@ public class CharacterStats : MonoBehaviour
             return preventedFromBeingNegative; 
         } 
     }
+
+
+    public enum CharacterState
+    {
+        Alive,
+        Dead
+
+    }
+
+    public CharacterState cState;
+
+    private void Awake()
+    {
+        cState = CharacterState.Alive;
+    }
+    public void DealDamage(float amountOfDamage)
+    {
+        _currentHealth -= amountOfDamage;
+        if(_currentHealth <= 0)
+        {
+            Debug.Log($"{gameObject.name} is dead");
+            cState = CharacterState.Dead;
+        }
+    }
+
+    public bool IsAlive()
+    {
+        return cState == CharacterState.Alive;
+
+    }
 }

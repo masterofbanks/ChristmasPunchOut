@@ -19,10 +19,11 @@ public class BaseEnemy : MonoBehaviour
     public float PursuingSpeed = 10.0f;
 
     [Header("Attacking Behavior")]
+    public float AttackDamage = 20f;
     public float AttackDuration = 1.0f;
     public float TimeBetweenAttacks = 2.5f;
-    public float _timeAttackCounter = 0f;
-    public float _timeBetweenAttackCounter = 0f;
+    private float _timeAttackCounter = 0f;
+    private float _timeBetweenAttackCounter = 0f;
 
     private Vector2 _vectorToPlayer;
     
@@ -52,10 +53,14 @@ public class BaseEnemy : MonoBehaviour
 
     private void StateController()
     {
-        //stop the player (for now) if the enemy is close enough to the  player
-        if(_vectorToPlayer.magnitude <= StoppingDistance)
+        if (!Player.gameObject.GetComponent<CharacterStats>().IsAlive())
         {
-            if(_timeBetweenAttackCounter > TimeBetweenAttacks)
+            CurrentEnemyState = EnemyStates.Idle;
+        }
+        //stop the player (for now) if the enemy is close enough to the player
+        else if (_vectorToPlayer.magnitude <= StoppingDistance)
+        {
+            if (_timeBetweenAttackCounter > TimeBetweenAttacks)
             {
                 Debug.Log("Trying to Attack");
                 _timeBetweenAttackCounter = 0f;
@@ -63,7 +68,7 @@ public class BaseEnemy : MonoBehaviour
                 CurrentEnemyState = EnemyStates.Attacking;
             }
 
-            else if(_timeAttackCounter > 0)
+            else if (_timeAttackCounter > 0)
             {
                 _timeAttackCounter -= Time.fixedDeltaTime;
             }
