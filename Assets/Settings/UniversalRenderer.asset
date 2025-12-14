@@ -67,5 +67,5 @@ MonoBehaviour:
   m_Active: 1
   settings:
     renderPassEvent: 550
-    targetWidth: 450
-    targetHeight: 450
+    targetWidth: 325
+    targetHeight: 325
