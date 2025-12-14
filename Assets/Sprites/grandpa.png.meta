@@ -1,0 +1,3289 @@
+fileFormatVersion: 2
+guid: 877d442ab45378b4faa80357ba7dc999
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -708783025850468930
+    second: grandpa_0
+  - first:
+      213: -5039794199130477161
+    second: grandpa_1
+  - first:
+      213: -7318347094056399055
+    second: grandpa_2
+  - first:
+      213: 150546319805953631
+    second: grandpa_3
+  - first:
+      213: 6792201181136136151
+    second: grandpa_4
+  - first:
+      213: 119067279411621121
+    second: grandpa_5
+  - first:
+      213: -7643845107643256219
+    second: grandpa_6
+  - first:
+      213: 7648413076087552352
+    second: grandpa_7
+  - first:
+      213: 3285196126900524856
+    second: grandpa_8
+  - first:
+      213: -8961905023498446141
+    second: grandpa_9
+  - first:
+      213: -8516791556812647605
+    second: grandpa_10
+  - first:
+      213: -2124622841904130226
+    second: grandpa_11
+  - first:
+      213: 7923594045986737370
+    second: grandpa_12
+  - first:
+      213: 4242542624399844816
+    second: grandpa_13
+  - first:
+      213: -8742090727411601881
+    second: grandpa_14
+  - first:
+      213: 3914435331607830092
+    second: grandpa_15
+  - first:
+      213: -5367912856623596653
+    second: grandpa_16
+  - first:
+      213: 6892807190234054373
+    second: grandpa_17
+  - first:
+      213: 3542311102214619845
+    second: grandpa_18
+  - first:
+      213: -7988701788569243245
+    second: grandpa_19
+  - first:
+      213: 6968536631231373178
+    second: grandpa_20
+  - first:
+      213: 1969870104225736822
+    second: grandpa_21
+  - first:
+      213: 8904026404134393061
+    second: grandpa_22
+  - first:
+      213: -1157618102218619020
+    second: grandpa_23
+  - first:
+      213: 5237246163664447953
+    second: grandpa_24
+  - first:
+      213: -4638300884199105862
+    second: grandpa_25
+  - first:
+      213: -6181053402236599259
+    second: grandpa_26
+  - first:
+      213: -896385463797854259
+    second: grandpa_27
+  - first:
+      213: 6629985319639982763
+    second: grandpa_28
+  - first:
+      213: 1932184452782973537
+    second: grandpa_29
+  - first:
+      213: -1977522653131384404
+    second: grandpa_30
+  - first:
+      213: -7309604282335586514
+    second: grandpa_31
+  - first:
+      213: -8022095959285960874
+    second: grandpa_32
+  - first:
+      213: -2373886353298208637
+    second: grandpa_33
+  - first:
+      213: -1064244796956720493
+    second: grandpa_34
+  - first:
+      213: -1561394586972806121
+    second: grandpa_35
+  - first:
+      213: -5249696184107433605
+    second: grandpa_36
+  - first:
+      213: -8531668159235601706
+    second: grandpa_37
+  - first:
+      213: 4644761899865397898
+    second: grandpa_38
+  - first:
+      213: 8299618518142700258
+    second: grandpa_39
+  - first:
+      213: 4585729106932884416
+    second: grandpa_40
+  - first:
+      213: 9141437964136637683
+    second: grandpa_41
+  - first:
+      213: -2552631387779411744
+    second: grandpa_42
+  - first:
+      213: 7383563482716199696
+    second: grandpa_43
+  - first:
+      213: -9001650054796073564
+    second: grandpa_44
+  - first:
+      213: 7265517417424528050
+    second: grandpa_45
+  - first:
+      213: 8487344276458164283
+    second: grandpa_46
+  - first:
+      213: -4120849424371627194
+    second: grandpa_47
+  - first:
+      213: 156072469747102960
+    second: grandpa_48
+  - first:
+      213: 8347563940187650014
+    second: grandpa_49
+  - first:
+      213: -212259146750695796
+    second: grandpa_50
+  - first:
+      213: 4453390001251307216
+    second: grandpa_51
+  - first:
+      213: 6154298348435576347
+    second: grandpa_52
+  - first:
+      213: -1434740156756195665
+    second: grandpa_53
+  - first:
+      213: -7624600202703123295
+    second: grandpa_54
+  - first:
+      213: 7284778945844851869
+    second: grandpa_55
+  - first:
+      213: -4304682400914187274
+    second: grandpa_56
+  - first:
+      213: 4316559475117271484
+    second: grandpa_57
+  - first:
+      213: 5893788760203029273
+    second: grandpa_58
+  - first:
+      213: -418508859544251133
+    second: grandpa_59
+  - first:
+      213: -895470786487682209
+    second: grandpa_60
+  - first:
+      213: 391336098776294375
+    second: grandpa_61
+  - first:
+      213: -1683802959679434692
+    second: grandpa_62
+  - first:
+      213: -2713125523655521732
+    second: grandpa_63
+  - first:
+      213: -6029226664053101429
+    second: grandpa_64
+  - first:
+      213: 7546726074874135063
+    second: grandpa_65
+  - first:
+      213: -6150786113897532888
+    second: grandpa_66
+  - first:
+      213: -5981385205996623217
+    second: grandpa_67
+  - first:
+      213: 4334375546923239417
+    second: grandpa_68
+  - first:
+      213: 2995772611847491250
+    second: grandpa_69
+  - first:
+      213: -4565703223332498617
+    second: grandpa_70
+  - first:
+      213: -1834329769265847974
+    second: grandpa_71
+  - first:
+      213: -5637662692024776207
+    second: grandpa_72
+  - first:
+      213: 2752685192464364276
+    second: grandpa_73
+  - first:
+      213: -6465669096242225028
+    second: grandpa_74
+  - first:
+      213: -5883871955850434875
+    second: grandpa_75
+  - first:
+      213: -2869670259980057721
+    second: grandpa_76
+  - first:
+      213: -7057191209636636745
+    second: grandpa_77
+  - first:
+      213: -1482294993480175896
+    second: grandpa_78
+  - first:
+      213: 6864980798273085578
+    second: grandpa_79
+  - first:
+      213: -3068366384204514954
+    second: grandpa_80
+  - first:
+      213: -5411604334241791845
+    second: grandpa_81
+  - first:
+      213: 2489242365543379579
+    second: grandpa_82
+  - first:
+      213: -4306371324679111394
+    second: grandpa_83
+  - first:
+      213: -2078776057448407666
+    second: grandpa_84
+  - first:
+      213: 852176826522849588
+    second: grandpa_85
+  - first:
+      213: -778348019299033926
+    second: grandpa_86
+  - first:
+      213: -7892374067883132867
+    second: grandpa_87
+  - first:
+      213: 6544621756636255769
+    second: grandpa_88
+  - first:
+      213: 6165600015775596879
+    second: grandpa_89
+  - first:
+      213: 5688038310631688664
+    second: grandpa_90
+  - first:
+      213: -4560054125229878806
+    second: grandpa_91
+  - first:
+      213: 5399131448131747158
+    second: grandpa_92
+  - first:
+      213: 1933302868643666924
+    second: grandpa_93
+  - first:
+      213: -500175071449257435
+    second: grandpa_94
+  - first:
+      213: -4030397350039899561
+    second: grandpa_95
+  - first:
+      213: 6454680231720758665
+    second: grandpa_96
+  - first:
+      213: -5859666068210324771
+    second: grandpa_97
+  - first:
+      213: -3660143404804219595
+    second: grandpa_98
+  - first:
+      213: 2812292358562342422
+    second: grandpa_99
+  - first:
+      213: 2418022791763556810
+    second: grandpa_100
+  - first:
+      213: -2307945884265788641
+    second: grandpa_101
+  - first:
+      213: 3049348749298454089
+    second: grandpa_102
+  - first:
+      213: 5939279936756644916
+    second: grandpa_103
+  - first:
+      213: 3991099777967941683
+    second: grandpa_104
+  - first:
+      213: -2951455247309136754
+    second: grandpa_105
+  - first:
+      213: -8455294039854391272
+    second: grandpa_106
+  - first:
+      213: 3153568164826396949
+    second: grandpa_107
+  - first:
+      213: -3023317911744824343
+    second: grandpa_108
+  - first:
+      213: 3267914210366068410
+    second: grandpa_109
+  - first:
+      213: -2230624560822532265
+    second: grandpa_110
+  - first:
+      213: 1798650985728029818
+    second: grandpa_111
+  - first:
+      213: 5854550315091086941
+    second: grandpa_112
+  - first:
+      213: 1188680744898807626
+    second: grandpa_113
+  - first:
+      213: 7375699622288393794
+    second: grandpa_114
+  - first:
+      213: 8046379259979100707
+    second: grandpa_115
+  - first:
+      213: -8939007032706084050
+    second: grandpa_116
+  - first:
+      213: -6631738312562127455
+    second: grandpa_117
+  - first:
+      213: 479189798069274274
+    second: grandpa_118
+  - first:
+      213: 5592392088005789673
+    second: grandpa_119
+  - first:
+      213: 5673490665290654229
+    second: grandpa_120
+  - first:
+      213: 2705451549034864532
+    second: grandpa_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grandpa_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 553
+        width: 62
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb53b51e795e926f0800000000000000
+      internalID: -708783025850468930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 551
+        width: 58
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79de0cbb0ed0f0ab0800000000000000
+      internalID: -5039794199130477161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 549
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f81cb9712007a90800000000000000
+      internalID: -7318347094056399055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 553
+        width: 62
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56b64a8419d61200800000000000000
+      internalID: 150546319805953631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 551
+        width: 58
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7ab94dcfeb24e50800000000000000
+      internalID: 6792201181136136151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 549
+        width: 58
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10da3bd4f0307a100800000000000000
+      internalID: 119067279411621121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_6
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562f0d89f5b9be590800000000000000
+      internalID: -7643845107643256219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_7
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 587
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069b6af6b2f942a60800000000000000
+      internalID: 7648413076087552352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8371561c87c579d20800000000000000
+      internalID: 3285196126900524856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_9
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca16930ddae0a380800000000000000
+      internalID: -8961905023498446141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_10
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43d226f3374ec980800000000000000
+      internalID: -8516791556812647605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e479f9238c2d382e0800000000000000
+      internalID: -2124622841904130226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_12
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 604
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc8077cdc246fd60800000000000000
+      internalID: 7923594045986737370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_13
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 458
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d56ec7f90a80ea30800000000000000
+      internalID: 4242542624399844816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 459
+        width: 61
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e256e0dcadda680800000000000000
+      internalID: -8742090727411601881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 459
+        width: 40
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e19bcc13ed25630800000000000000
+      internalID: 3914435331607830092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 459
+        width: 37
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39bb2b382b75185b0800000000000000
+      internalID: -5367912856623596653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_17
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 461
+        width: 58
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eeb82fae9b28af50800000000000000
+      internalID: 6892807190234054373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_18
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 466
+        width: 44
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2cc63fd21d82130800000000000000
+      internalID: 3542311102214619845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_19
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 467
+        width: 59
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3917dcb9c0e622190800000000000000
+      internalID: -7988701788569243245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_20
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 467
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fd7dc252735b060800000000000000
+      internalID: 6968536631231373178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_21
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 465
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67869084c62665b10800000000000000
+      internalID: 1969870104225736822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_22
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 464
+        width: 57
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e41129c6d4719b70800000000000000
+      internalID: 8904026404134393061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_23
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 370
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47782b728705fefe0800000000000000
+      internalID: -1157618102218619020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_24
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 371
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d92f7243af6ea840800000000000000
+      internalID: 5237246163664447953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_25
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 372
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba9eebabe171afb0800000000000000
+      internalID: -4638300884199105862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_26
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 369
+        width: 61
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524c7f5edac783aa0800000000000000
+      internalID: -6181053402236599259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 368
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf41808b266f83f0800000000000000
+      internalID: -896385463797854259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_28
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 370
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba222336580720c50800000000000000
+      internalID: 6629985319639982763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_29
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 368
+        width: 67
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16269acc58f70da10800000000000000
+      internalID: 1932184452782973537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 280
+        width: 70
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9d0d4df9d6e84e0800000000000000
+      internalID: -1977522653131384404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 279
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2796b612a11f8a90800000000000000
+      internalID: -7309604282335586514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_32
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 281
+        width: 78
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fe9a85a3acba090800000000000000
+      internalID: -8022095959285960874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_33
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 281
+        width: 46
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388438660f24e0fd0800000000000000
+      internalID: -2373886353298208637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_34
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 281
+        width: 83
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392465beefa0b31f0800000000000000
+      internalID: -1064244796956720493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_35
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 273
+        width: 91
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714a44155efc45ae0800000000000000
+      internalID: -1561394586972806121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 192
+        width: 73
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b718d8772255527b0800000000000000
+      internalID: -5249696184107433605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_37
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 195
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da404b030d699980800000000000000
+      internalID: -8531668159235601706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_38
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 193
+        width: 60
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8adeb3c652857040800000000000000
+      internalID: 4644761899865397898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_39
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 193
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea4629a11b2e2370800000000000000
+      internalID: 8299618518142700258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_40
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 241
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c367e69358c3af30800000000000000
+      internalID: 4585729106932884416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_41
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 238
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f462ac1569ecde70800000000000000
+      internalID: 9141437964136637683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_42
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 239
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e055e8f64b339cd0800000000000000
+      internalID: -2552631387779411744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_43
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 241
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b58d32edfa77660800000000000000
+      internalID: 7383563482716199696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_44
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 241
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5218bc7f6b31380800000000000000
+      internalID: -9001650054796073564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_45
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 240
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2a007c89d44d460800000000000000
+      internalID: 7265517417424528050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_46
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 241
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30dbbcc6aa19c570800000000000000
+      internalID: 8487344276458164283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_47
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 241
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bc47f184dcfc6c0800000000000000
+      internalID: -4120849424371627194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_48
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 241
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f47e76951b7a2200800000000000000
+      internalID: 156072469747102960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_49
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 238
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7beb22d2188d370800000000000000
+      internalID: 8347563940187650014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_50
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 240
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86e89d3e67ed0df0800000000000000
+      internalID: -212259146750695796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_51
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 222
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de4cde6c9e9dcd30800000000000000
+      internalID: 4453390001251307216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_52
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 225
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b169644bdb5786550800000000000000
+      internalID: 6154298348435576347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_53
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 225
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa60f83dd67c61ce0800000000000000
+      internalID: -1434740156756195665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_54
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 225
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac4283338aff2690800000000000000
+      internalID: -7624600202703123295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_55
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 225
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94b356dadbb81560800000000000000
+      internalID: 7284778945844851869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_56
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 225
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb52aed922b244c0800000000000000
+      internalID: -4304682400914187274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_57
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 225
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb92636f8ff77eb30800000000000000
+      internalID: 4316559475117271484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_58
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 225
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b671996a1fac150800000000000000
+      internalID: 5893788760203029273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_59
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 224
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305d28bd868213af0800000000000000
+      internalID: -418508859544251133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_60
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 225
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b79a86016a293f0800000000000000
+      internalID: -895470786487682209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_61
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 225
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e32953cb1e4e6500800000000000000
+      internalID: 391336098776294375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_62
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 224
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c305e8c112ee1a8e0800000000000000
+      internalID: -1683802959679434692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_63
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 209
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a877306ba095ad0800000000000000
+      internalID: -2713125523655521732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_64
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 206
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c2dc21b42e35ca0800000000000000
+      internalID: -6029226664053101429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_65
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 209
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7120d0e716b5bb860800000000000000
+      internalID: 7546726074874135063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_66
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 209
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8227bbf1e9404aaa0800000000000000
+      internalID: -6150786113897532888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_67
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 209
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a6bcb88d9ddfca0800000000000000
+      internalID: -5981385205996623217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_68
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 209
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7cf7d689bc62c30800000000000000
+      internalID: 4334375546923239417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_69
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 209
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be8305715f139920800000000000000
+      internalID: 2995772611847491250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_70
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 209
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7431967cb1d53a0c0800000000000000
+      internalID: -4565703223332498617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_71
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 209
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a512cf52bc62b86e0800000000000000
+      internalID: -1834329769265847974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_72
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 206
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f90466b6aff2c1b0800000000000000
+      internalID: -5637662692024776207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_73
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 209
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2f0532990833620800000000000000
+      internalID: 2752685192464364276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_74
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 209
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70e24ba6345546a0800000000000000
+      internalID: -6465669096242225028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_75
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 210
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6e6a751a9485ea0800000000000000
+      internalID: -5883871955850434875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_76
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 209
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783c26b4a12ec28d0800000000000000
+      internalID: -2869670259980057721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_77
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 209
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b759954cf1df0e90800000000000000
+      internalID: -7057191209636636745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_78
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 209
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee26459e84dd6be0800000000000000
+      internalID: -1482294993480175896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_79
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 206
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80e1fee9af454f50800000000000000
+      internalID: 6864980798273085578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_80
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 209
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6797dbcc709fa65d0800000000000000
+      internalID: -3068366384204514954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_81
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 209
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90cd88a78e16e4b0800000000000000
+      internalID: -5411604334241791845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_82
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 209
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72f01e2eb09b8220800000000000000
+      internalID: 2489242365543379579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_83
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 206
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1db299a812bc34c0800000000000000
+      internalID: -4306371324679111394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_84
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 209
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d53388034b623e0800000000000000
+      internalID: -2078776057448407666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_85
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 209
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431d6b60f4a83db00800000000000000
+      internalID: 852176826522849588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_86
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 209
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc5d0ea990c235f0800000000000000
+      internalID: -778348019299033926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_87
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 193
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d383251d997a87290800000000000000
+      internalID: -7892374067883132867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_88
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 193
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916d89110da23da50800000000000000
+      internalID: 6544621756636255769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_89
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 193
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41827f2c8c909550800000000000000
+      internalID: 6165600015775596879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_90
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 193
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9c30ef4b8ffee40800000000000000
+      internalID: 5688038310631688664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_91
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 193
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae15e1deeee67b0c0800000000000000
+      internalID: -4560054125229878806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_92
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 193
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d788d32719dea40800000000000000
+      internalID: 5399131448131747158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_93
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 193
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebdfb847b874da10800000000000000
+      internalID: 1933302868643666924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_94
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 193
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ae2cc2c650f09f0800000000000000
+      internalID: -500175071449257435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_95
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752323fc6f62118c0800000000000000
+      internalID: -4030397350039899561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_96
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 193
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98da37ee871a39950800000000000000
+      internalID: 6454680231720758665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_97
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 193
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddae9edb1c84eaea0800000000000000
+      internalID: -5859666068210324771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_98
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 193
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53dd7a137fe843dc0800000000000000
+      internalID: -3660143404804219595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_99
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 193
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61667acfff4470720800000000000000
+      internalID: 2812292358562342422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_100
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 193
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac97dd9faea8e8120800000000000000
+      internalID: 2418022791763556810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_101
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 193
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b438f327788ffd0800000000000000
+      internalID: -2307945884265788641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_102
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 193
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e47360886715a20800000000000000
+      internalID: 3049348749298454089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_103
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 98
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cfbf382af8c6250800000000000000
+      internalID: 5939279936756644916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_104
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 106
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3386be03a1c336730800000000000000
+      internalID: 3991099777967941683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_105
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 111
+        width: 88
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c1dad07135a07d0800000000000000
+      internalID: -2951455247309136754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_106
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 105
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810600b6ed2c8aa80800000000000000
+      internalID: -8455294039854391272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_107
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 102
+        width: 64
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519357f9989b3cb20800000000000000
+      internalID: 3153568164826396949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_108
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 103
+        width: 62
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebbf53a0640b06d0800000000000000
+      internalID: -3023317911744824343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_109
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 3
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6125109a6f95d20800000000000000
+      internalID: 3267914210366068410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_110
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 92
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75749e0c7ca3b01e0800000000000000
+      internalID: -2230624560822532265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_111
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 92
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74b937ba8716f810800000000000000
+      internalID: 1798650985728029818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_112
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 92
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ec7aa2e7a8f3150800000000000000
+      internalID: 5854550315091086941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_113
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 92
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a474a0fe6da0f7010800000000000000
+      internalID: 1188680744898807626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_114
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 92
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2468b747abfbb5660800000000000000
+      internalID: 7375699622288393794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_115
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 92
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322ff1f2e4b7aaf60800000000000000
+      internalID: 8046379259979100707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_116
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 12
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e23d5d2f67442f380800000000000000
+      internalID: -8939007032706084050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_117
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 12
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adc264242557f3a0800000000000000
+      internalID: -6631738312562127455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_118
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 12
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a609ed159c66a600800000000000000
+      internalID: 479189798069274274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_119
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e74a4a69fa2c9d40800000000000000
+      internalID: 5592392088005789673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_120
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 3
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512e42d53b94cbe40800000000000000
+      internalID: 5673490665290654229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandpa_121
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 3
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fd04989d1bb8520800000000000000
+      internalID: 2705451549034864532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b1da62a21f1a5db41a2b7b86361b9044
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grandpa_0: -708783025850468930
+      grandpa_1: -5039794199130477161
+      grandpa_10: -8516791556812647605
+      grandpa_100: 2418022791763556810
+      grandpa_101: -2307945884265788641
+      grandpa_102: 3049348749298454089
+      grandpa_103: 5939279936756644916
+      grandpa_104: 3991099777967941683
+      grandpa_105: -2951455247309136754
+      grandpa_106: -8455294039854391272
+      grandpa_107: 3153568164826396949
+      grandpa_108: -3023317911744824343
+      grandpa_109: 3267914210366068410
+      grandpa_11: -2124622841904130226
+      grandpa_110: -2230624560822532265
+      grandpa_111: 1798650985728029818
+      grandpa_112: 5854550315091086941
+      grandpa_113: 1188680744898807626
+      grandpa_114: 7375699622288393794
+      grandpa_115: 8046379259979100707
+      grandpa_116: -8939007032706084050
+      grandpa_117: -6631738312562127455
+      grandpa_118: 479189798069274274
+      grandpa_119: 5592392088005789673
+      grandpa_12: 7923594045986737370
+      grandpa_120: 5673490665290654229
+      grandpa_121: 2705451549034864532
+      grandpa_13: 4242542624399844816
+      grandpa_14: -8742090727411601881
+      grandpa_15: 3914435331607830092
+      grandpa_16: -5367912856623596653
+      grandpa_17: 6892807190234054373
+      grandpa_18: 3542311102214619845
+      grandpa_19: -7988701788569243245
+      grandpa_2: -7318347094056399055
+      grandpa_20: 6968536631231373178
+      grandpa_21: 1969870104225736822
+      grandpa_22: 8904026404134393061
+      grandpa_23: -1157618102218619020
+      grandpa_24: 5237246163664447953
+      grandpa_25: -4638300884199105862
+      grandpa_26: -6181053402236599259
+      grandpa_27: -896385463797854259
+      grandpa_28: 6629985319639982763
+      grandpa_29: 1932184452782973537
+      grandpa_3: 150546319805953631
+      grandpa_30: -1977522653131384404
+      grandpa_31: -7309604282335586514
+      grandpa_32: -8022095959285960874
+      grandpa_33: -2373886353298208637
+      grandpa_34: -1064244796956720493
+      grandpa_35: -1561394586972806121
+      grandpa_36: -5249696184107433605
+      grandpa_37: -8531668159235601706
+      grandpa_38: 4644761899865397898
+      grandpa_39: 8299618518142700258
+      grandpa_4: 6792201181136136151
+      grandpa_40: 4585729106932884416
+      grandpa_41: 9141437964136637683
+      grandpa_42: -2552631387779411744
+      grandpa_43: 7383563482716199696
+      grandpa_44: -9001650054796073564
+      grandpa_45: 7265517417424528050
+      grandpa_46: 8487344276458164283
+      grandpa_47: -4120849424371627194
+      grandpa_48: 156072469747102960
+      grandpa_49: 8347563940187650014
+      grandpa_5: 119067279411621121
+      grandpa_50: -212259146750695796
+      grandpa_51: 4453390001251307216
+      grandpa_52: 6154298348435576347
+      grandpa_53: -1434740156756195665
+      grandpa_54: -7624600202703123295
+      grandpa_55: 7284778945844851869
+      grandpa_56: -4304682400914187274
+      grandpa_57: 4316559475117271484
+      grandpa_58: 5893788760203029273
+      grandpa_59: -418508859544251133
+      grandpa_6: -7643845107643256219
+      grandpa_60: -895470786487682209
+      grandpa_61: 391336098776294375
+      grandpa_62: -1683802959679434692
+      grandpa_63: -2713125523655521732
+      grandpa_64: -6029226664053101429
+      grandpa_65: 7546726074874135063
+      grandpa_66: -6150786113897532888
+      grandpa_67: -5981385205996623217
+      grandpa_68: 4334375546923239417
+      grandpa_69: 2995772611847491250
+      grandpa_7: 7648413076087552352
+      grandpa_70: -4565703223332498617
+      grandpa_71: -1834329769265847974
+      grandpa_72: -5637662692024776207
+      grandpa_73: 2752685192464364276
+      grandpa_74: -6465669096242225028
+      grandpa_75: -5883871955850434875
+      grandpa_76: -2869670259980057721
+      grandpa_77: -7057191209636636745
+      grandpa_78: -1482294993480175896
+      grandpa_79: 6864980798273085578
+      grandpa_8: 3285196126900524856
+      grandpa_80: -3068366384204514954
+      grandpa_81: -5411604334241791845
+      grandpa_82: 2489242365543379579
+      grandpa_83: -4306371324679111394
+      grandpa_84: -2078776057448407666
+      grandpa_85: 852176826522849588
+      grandpa_86: -778348019299033926
+      grandpa_87: -7892374067883132867
+      grandpa_88: 6544621756636255769
+      grandpa_89: 6165600015775596879
+      grandpa_9: -8961905023498446141
+      grandpa_90: 5688038310631688664
+      grandpa_91: -4560054125229878806
+      grandpa_92: 5399131448131747158
+      grandpa_93: 1933302868643666924
+      grandpa_94: -500175071449257435
+      grandpa_95: -4030397350039899561
+      grandpa_96: 6454680231720758665
+      grandpa_97: -5859666068210324771
+      grandpa_98: -3660143404804219595
+      grandpa_99: 2812292358562342422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
