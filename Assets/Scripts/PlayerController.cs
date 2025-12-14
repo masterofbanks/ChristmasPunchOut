@@ -33,6 +33,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] DodgeState _dodgeInputState = DodgeState.CanDodge;
     float _initialDodgeXPosition;
 
+    [Space]
+    [Space]
+    [Header("------------------- ANIMATOR SETTINGS -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] private Animator _animator;
+    
     private void Start()
     {
         playerCamera = Camera.main;
@@ -80,6 +86,14 @@ public class PlayerController : MonoBehaviour
     {
         movementInput = value.Get<Vector2>();
     }
+    public void OnAttackLeft(InputValue value)
+    {
+        _animator.SetTrigger("AttackLeft");
+    }
+    public void OnAttackRight(InputValue value)
+    {
+        _animator.SetTrigger("AttackRight");
+    }
 
     public void ResetDodge()
     {
@@ -125,10 +139,12 @@ public class PlayerController : MonoBehaviour
             if(movementInput.x < 0)
             {
                 _dodgeTarget = _initialDodgeXPosition - _dodgeDistance;
+                _animator.SetTrigger("DodgeLeft");
             }
             else
             {
                 _dodgeTarget = _initialDodgeXPosition + _dodgeDistance;
+                _animator.SetTrigger("DodgeRight");
             }
         }
     }
