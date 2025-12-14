@@ -108,15 +108,15 @@ MonoBehaviour:
   EnemyAttacks:
   - Name: Uppercut
     Damage: 20
-    Duration: 1.1
+    Duration: 1.3
     CooldownTime: 2.5
   - Name: Jab
     Damage: 5
-    Duration: 0.75
+    Duration: 0.9
     CooldownTime: 1
   - Name: Swing
     Damage: 15
-    Duration: 0.8
+    Duration: 1.2
     CooldownTime: 1.5
   CurrentAttack:
     Name: 
@@ -124,13 +124,11 @@ MonoBehaviour:
     Duration: 0
     CooldownTime: 0
   CurrentEnemyState: 0
+  EnemyStats: {fileID: 0}
   Player: {fileID: 0}
-  StoppingDistance: 1.1
+  StoppingDistance: 2.54
   PursuingSpeed: 2
-  _timeInHitStun: 0
-  _HitStunDuration: 1.1
-  _timeBetweenAttacks: 0
-  _timeBetweenAttackCounter: 0
+  HitStunDuration: 1.1
 --- !u!50 &4504847113125266055
 Rigidbody2D:
   serializedVersion: 5
