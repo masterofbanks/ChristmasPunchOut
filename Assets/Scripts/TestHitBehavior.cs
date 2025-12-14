@@ -19,14 +19,13 @@ public class TestHitBehavior : MonoBehaviour
         if(collision.gameObject.CompareTag("Hit"))
         {
             BaseEnemy enemyScript = collision.gameObject.GetComponentInParent<BaseEnemy>();
-            statsScript.DealDamage(enemyScript.AttackDamage);
+            statsScript.DealDamage(enemyScript.CurrentAttack.Damage);
             StartCoroutine(FlashRed());
         }
     }
 
     IEnumerator FlashRed()
     {
-        Debug.Log("Trying to turn the red");
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(HitDuration);
         spriteRenderer.color = Color.white;

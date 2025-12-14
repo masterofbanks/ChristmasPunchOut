@@ -1,13 +1,26 @@
+using NUnit.Framework;
 using UnityEngine;
-
+using System.Collections.Generic;
 public class BaseEnemy : MonoBehaviour
 {
     public enum EnemyStates
     {
         Idle,
         Approaching,
-        Attacking
+        Attacking // to add: light jab attack, blocking behavior, hit beavjor, and death anims
     }
+
+    [System.Serializable]
+    public class EnemyStructure 
+    {
+        public string Name;
+        public float Damage;
+        public float Duration;
+        public float CooldownTime;
+    }
+
+    public List<EnemyStructure> EnemyAttacks;
+    public EnemyStructure CurrentAttack;
 
     [Header("Key Enemy Values")]
     public EnemyStates CurrentEnemyState;
@@ -18,10 +31,11 @@ public class BaseEnemy : MonoBehaviour
     public float StoppingDistance = 5.0f;
     public float PursuingSpeed = 10.0f;
 
-    [Header("Attacking Behavior")]
-    public float AttackDamage = 20f;
-    public float AttackDuration = 1.0f;
-    public float TimeBetweenAttacks = 2.5f;
+
+    [Header("Uppercut Values")]
+    
+
+    private float _timeBetweenAttacks = 0f;
     private float _timeAttackCounter = 0f;
     private float _timeBetweenAttackCounter = 0f;
 
@@ -31,11 +45,19 @@ public class BaseEnemy : MonoBehaviour
     //components
     private Rigidbody2D _rb2D;
     private Animator _anime;
+    private System.Random rndGen;
 
     private void Awake()
     {
         _rb2D = GetComponent<Rigidbody2D>();
         _anime = GetComponent<Animator>();
+        rndGen = new System.Random();
+
+
+        CurrentAttack = EnemyAttacks[0];
+        _timeBetweenAttacks = CurrentAttack.CooldownTime;
+        
+
     }
 
     private void Start()
@@ -53,19 +75,19 @@ public class BaseEnemy : MonoBehaviour
 
     private void StateController()
     {
+        //if the player is dead, return the enemy to its idle state
         if (!Player.gameObject.GetComponent<CharacterStats>().IsAlive())
         {
             CurrentEnemyState = EnemyStates.Idle;
         }
+
         //stop the player (for now) if the enemy is close enough to the player
         else if (_vectorToPlayer.magnitude <= StoppingDistance)
         {
-            if (_timeBetweenAttackCounter > TimeBetweenAttacks)
+            //enter the attack state if enough time has passed between attacks
+            if (_timeBetweenAttackCounter > _timeBetweenAttacks)
             {
-                Debug.Log("Trying to Attack");
-                _timeBetweenAttackCounter = 0f;
-                _timeAttackCounter = AttackDuration;
-                CurrentEnemyState = EnemyStates.Attacking;
+                AttackingBehavior();
             }
 
             else if (_timeAttackCounter > 0)
@@ -89,6 +111,16 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
+    private void AttackingBehavior()
+    {
+        int randomIndex = rndGen.Next(0, EnemyAttacks.Count);
+        _anime.SetInteger("attack_type", randomIndex);
+        CurrentAttack = EnemyAttacks[randomIndex];
+        Debug.Log("Trying to Attack");
+        _timeBetweenAttackCounter = 0f;
+        _timeAttackCounter = CurrentAttack.Duration;
+        CurrentEnemyState = EnemyStates.Attacking;
+    }
 
 
 
