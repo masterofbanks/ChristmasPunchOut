@@ -132,4 +132,13 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public void TriggerCombatMode()
+    {
+        canFreeMove = false;
+    }
+    public void TriggerFreeMoveMode()
+    {
+        canFreeMove = true;
+    }
 }

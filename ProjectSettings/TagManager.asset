@@ -3,16 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Hit
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Hit
+  - 
   - Water
   - UI
-  - 
+  - IFrame
   - 
   - 
   - 
