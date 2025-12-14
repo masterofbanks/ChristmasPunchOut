@@ -7,10 +7,31 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
+    [SerializeField] private bool canFreeMove = true;
 
     private Vector2 movementInput;
     private Rigidbody2D rb;
 
+    [Space]
+    [Space]
+    [Header("------------------- DODGE SETTINGS -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] float _dodgeSpeed_LowerIsFaster = .3f;
+    float _dodgeTimer;
+    [SerializeField] float _dodgeDistance = 2;
+    [SerializeField] float _dodgeInputThreshold = .2f;
+
+    [Header("Exposed In Inspector For Debugging")]
+    [SerializeField] float _dodgeTarget;
+    private enum DodgeState
+    {
+        CanDodge,
+        IsMovingToTarget,
+        IsMovingBack,
+        NeedsReset
+    }
+    [SerializeField] DodgeState _dodgeInputState = DodgeState.CanDodge;
+    float _initialDodgeXPosition;
 
     private void Start()
     {
@@ -21,6 +42,37 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         MovePlayer();
+
+        if(_dodgeInputState == DodgeState.IsMovingToTarget)
+        {
+            if(_dodgeTimer > 0)
+            {
+                _dodgeTimer -= Time.deltaTime;
+                float newXPosition = Mathf.Lerp(_dodgeTarget, _initialDodgeXPosition, _dodgeTimer / _dodgeSpeed_LowerIsFaster);
+                transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(_dodgeTarget, transform.position.y, transform.position.z);
+                _dodgeInputState = DodgeState.IsMovingBack;
+                _dodgeTimer = _dodgeSpeed_LowerIsFaster;
+            }
+        }
+        
+        if(_dodgeInputState == DodgeState.IsMovingBack)
+        {
+            if(_dodgeTimer > 0)
+            {
+                _dodgeTimer -= Time.deltaTime;
+                float newXPosition = Mathf.Lerp(_initialDodgeXPosition, _dodgeTarget, _dodgeTimer / _dodgeSpeed_LowerIsFaster);
+                transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(_initialDodgeXPosition, transform.position.y, transform.position.z);
+                _dodgeInputState = DodgeState.CanDodge;
+            }
+        }
     }
 
     public void OnMove(InputValue value)
@@ -28,7 +80,24 @@ public class PlayerController : MonoBehaviour
         movementInput = value.Get<Vector2>();
     }
 
+    public void ResetDodge()
+    {
+        _dodgeInputState = DodgeState.CanDodge;
+    }
+
     private void MovePlayer()
+    {
+        if (canFreeMove)
+        {
+            FreeMovementHandler();
+        }
+        else
+        {
+            CombatMovementHandler();
+        }
+    }
+
+    private void FreeMovementHandler()
     {
         Vector3 forward = playerCamera.transform.forward;
         Vector3 right = playerCamera.transform.right;
@@ -41,5 +110,24 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = (right * movementInput.x + forward * movementInput.y).normalized;
 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
+    }
+
+    private void CombatMovementHandler()
+    {
+        if (_dodgeInputState == DodgeState.CanDodge && Mathf.Abs(movementInput.x) > _dodgeInputThreshold)
+        {
+            _dodgeInputState = DodgeState.IsMovingToTarget;
+            _dodgeTimer = _dodgeSpeed_LowerIsFaster;
+            _initialDodgeXPosition = transform.position.x;
+
+            if(movementInput.x < 0)
+            {
+                _dodgeTarget = _initialDodgeXPosition - _dodgeDistance;
+            }
+            else
+            {
+                _dodgeTarget = _initialDodgeXPosition + _dodgeDistance;
+            }
+        }
     }
 }
