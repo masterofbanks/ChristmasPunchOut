@@ -258,10 +258,6 @@ PrefabInstance:
       propertyPath: EnemyStats
       value: 
       objectReference: {fileID: 182648064}
-    - target: {fileID: 5955495551636268654, guid: e26b19b38036e1f4ea70f8c6de1e903e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -7181329884951762947, guid: 800ca6a25de694c43b8f0252883a43aa, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
