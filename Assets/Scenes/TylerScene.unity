@@ -1133,6 +1133,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  canFreeMove: 1
+  _dodgeSpeed_LowerIsFaster: 0.3
+  _dodgeDistance: 2
+  _dodgeInputThreshold: 0.2
+  _dodgeTarget: 0
+  _dodgeInputState: 0
+  _animator: {fileID: 0}
 --- !u!4 &1335916350
 Transform:
   m_ObjectHideFlags: 0
