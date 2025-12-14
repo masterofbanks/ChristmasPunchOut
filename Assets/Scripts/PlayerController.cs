@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = new Vector3(_initialDodgeXPosition, transform.position.y, transform.position.z);
                 _dodgeInputState = DodgeState.CanDodge;
+                gameObject.layer = LayerManager.DEFAULT_LAYER;
             }
         }
     }
@@ -119,6 +120,7 @@ public class PlayerController : MonoBehaviour
             _dodgeInputState = DodgeState.IsMovingToTarget;
             _dodgeTimer = _dodgeSpeed_LowerIsFaster;
             _initialDodgeXPosition = transform.position.x;
+            gameObject.layer = LayerManager.IFRAME_LAYER;
 
             if(movementInput.x < 0)
             {
