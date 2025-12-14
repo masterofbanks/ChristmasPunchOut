@@ -15,6 +15,11 @@ public class CharacterStats : MonoBehaviour
         } 
     }
 
+    public void ApplyDamage(float damage)
+    {
+        _currentHealth -= damage;
+    }
+
 
     public enum CharacterState
     {
