@@ -69,7 +69,7 @@ public class BaseEnemy : MonoBehaviour
     {
         CurrentEnemyState = EnemyStates.Idle;
 
-        Player = FindFirstObjectByType<PlayerController>()?.transform;
+        Player = Player != null ? Player : FindFirstObjectByType<PlayerController>()?.transform;
 
         _vectorToPlayer = Player.position - transform.position;
     }

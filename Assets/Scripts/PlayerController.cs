@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
     public void ApplyAHit(float damage)
     {
-        if (_dodgeInputState == DodgeState.IsMovingToTarget && _dodgeInputState == DodgeState.IsMovingBack) return;
+        if (_dodgeInputState == DodgeState.IsMovingToTarget || _dodgeInputState == DodgeState.IsMovingBack) return;
 
         _stats.ApplyDamage(damage);
     }
