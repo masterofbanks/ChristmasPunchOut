@@ -1,14 +1,17 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 public class BaseEnemy : MonoBehaviour
 {
     public enum EnemyStates
     {
         Idle,
         Approaching,
-        Attacking, // to add: light jab attack, blocking behavior, hit beavjor, and death anims
-        Blocking
+        Attacking, // to add: light jab attack, blocking behavior, hit behavior, and death anims
+        Blocking,
+        Hit,
+        Dead
     }
 
     [System.Serializable]
@@ -25,21 +28,20 @@ public class BaseEnemy : MonoBehaviour
 
     [Header("Key Enemy Values")]
     public EnemyStates CurrentEnemyState;
-
+    public CharacterStats EnemyStats;
 
     [Header("Targeting Behavior")]
     public Transform Player;
     public float StoppingDistance = 5.0f;
     public float PursuingSpeed = 10.0f;
 
+    [Header("Hurt Values")]
+    public float HitStunDuration = 1.1f;
 
-    [Header("Uppercut Values")]
-    
-
+    private float _timeInHitStun = 0f;
     private float _timeBetweenAttacks = 0f;
     private float _timeAttackCounter = 0f;
     private float _timeBetweenAttackCounter = 0f;
-
     private Vector2 _vectorToPlayer;
     
     
@@ -53,7 +55,7 @@ public class BaseEnemy : MonoBehaviour
         _rb2D = GetComponent<Rigidbody2D>();
         _anime = GetComponent<Animator>();
         rndGen = new System.Random();
-
+        EnemyStats = GetComponent<CharacterStats>();
 
         CurrentAttack = EnemyAttacks[0];
         _timeBetweenAttacks = CurrentAttack.CooldownTime;
@@ -70,14 +72,22 @@ public class BaseEnemy : MonoBehaviour
     private void FixedUpdate()
     {
         _vectorToPlayer = Player.position - transform.position;
-        StateController();
+        //only update states if the enemy is alive
+        if(CurrentEnemyState != EnemyStates.Dead)
+            StateController();
         _anime.SetInteger("state", (int)CurrentEnemyState);
     }
 
     private void StateController()
     {
+        //if the player is in hitStun, change the state to the Hit state
+        if(_timeInHitStun > 0)
+        {
+            HitRoutine();
+        }
+        
         //if the player is dead, return the enemy to its idle state
-        if (!Player.gameObject.GetComponent<CharacterStats>().IsAlive())
+        else if (!Player.gameObject.GetComponent<CharacterStats>().IsAlive())
         {
             CurrentEnemyState = EnemyStates.Idle;
         }
@@ -114,14 +124,49 @@ public class BaseEnemy : MonoBehaviour
 
     private void AttackingBehavior()
     {
+        //find a random attack to display
         int randomIndex = rndGen.Next(0, EnemyAttacks.Count);
         _anime.SetInteger("attack_type", randomIndex);
         CurrentAttack = EnemyAttacks[randomIndex];
+
+        //perform the attack
         _timeBetweenAttackCounter = 0f;
         _timeAttackCounter = CurrentAttack.Duration;
         CurrentEnemyState = EnemyStates.Attacking;
     }
 
+    private void HitRoutine()
+    {
+        CurrentEnemyState = EnemyStates.Hit;
+        _timeInHitStun -= Time.fixedDeltaTime;
+        if(_timeInHitStun < 0)
+        {
+            _timeInHitStun = 0f;
+        }
+    }
+
+    public void ApplyAHit(float amountOfDamage)
+    {
+        if(CurrentEnemyState != EnemyStates.Blocking)
+        {
+            EnemyStats.DealDamage(amountOfDamage);
+            if (EnemyStats.IsAlive())
+            {
+                _timeInHitStun = HitStunDuration;
+            }
+
+            else
+            {
+                PerformDeath();
+            }
+        }
+        
+    }
+
+    private void PerformDeath()
+    {
+        CurrentEnemyState = EnemyStates.Dead;
+    }
 
 
 }
