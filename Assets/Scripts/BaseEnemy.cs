@@ -11,7 +11,8 @@ public class BaseEnemy : MonoBehaviour
         Attacking, // to add: light jab attack, blocking behavior, hit behavior, and death anims
         Blocking,
         Hit,
-        Dead
+        Dead,
+        BlockHit
     }
 
     [System.Serializable]
@@ -37,6 +38,7 @@ public class BaseEnemy : MonoBehaviour
 
     [Header("Hurt Values")]
     public float HitStunDuration = 1.1f;
+    public float BlockHitStunDuration = 0.7f;
 
     private float _timeInHitStun = 0f;
     private float _timeBetweenAttacks = 0f;
@@ -137,7 +139,15 @@ public class BaseEnemy : MonoBehaviour
 
     private void HitRoutine()
     {
-        CurrentEnemyState = EnemyStates.Hit;
+        if(CurrentEnemyState == EnemyStates.Blocking ||CurrentEnemyState == EnemyStates.BlockHit)
+        {
+            CurrentEnemyState = EnemyStates.BlockHit;
+        }
+        else
+        {
+            CurrentEnemyState = EnemyStates.Hit;
+        }
+
         _timeInHitStun -= Time.fixedDeltaTime;
         if(_timeInHitStun < 0)
         {
@@ -159,6 +169,11 @@ public class BaseEnemy : MonoBehaviour
             {
                 PerformDeath();
             }
+        }
+
+        else
+        {
+            _timeInHitStun = BlockHitStunDuration;
         }
         
     }
