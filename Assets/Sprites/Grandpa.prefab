@@ -107,15 +107,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyAttacks:
   - Name: Jab
-    Damage: 5
+    Damage: 40
     Duration: 0.8
     CooldownTime: 1.1
   - Name: Leg Kick
-    Damage: 20
+    Damage: 75
     Duration: 1.1
     CooldownTime: 1.5
   - Name: Swing
-    Damage: 15
+    Damage: 55
     Duration: 0.9
     CooldownTime: 1.25
   CurrentAttack:
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 276461487395fc74098dc73368fdf61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
-  _currentHealth: 100
+  _maxHealth: 200
+  _currentHealth: 200
   cState: 0
 --- !u!54 &6996942079514590395
 Rigidbody:

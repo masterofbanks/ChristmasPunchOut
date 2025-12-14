@@ -16,6 +16,12 @@ public class PlayerController : MonoBehaviour
     [Space]
     [Header("------------------- DODGE SETTINGS -------------------")]
     [Header("Needs to be Set In Inspector")]
+    [SerializeField] private CharacterStats _stats;
+
+    [Space]
+    [Space]
+    [Header("------------------- DODGE SETTINGS -------------------")]
+    [Header("Needs to be Set In Inspector")]
     [SerializeField] float _dodgeSpeed_LowerIsFaster = .3f;
     float _dodgeTimer;
     [SerializeField] float _dodgeDistance = 2;
@@ -38,6 +44,12 @@ public class PlayerController : MonoBehaviour
     [Header("------------------- ANIMATOR SETTINGS -------------------")]
     [Header("Needs to be Set In Inspector")]
     [SerializeField] private Animator _animator;
+
+    [Space]
+    [Space]
+    [Header("------------------- ATTACKING -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] private PlayerHitbox _attackHitbox;
     
     private void Start()
     {
@@ -95,9 +107,21 @@ public class PlayerController : MonoBehaviour
         _animator.SetTrigger("AttackRight");
     }
 
+    public void ActivateAttackHitbox()
+    {
+        _attackHitbox.gameObject.SetActive(true);
+    }
+
     public void ResetDodge()
     {
         _dodgeInputState = DodgeState.CanDodge;
+    }
+
+    public void ApplyAHit(float damage)
+    {
+        if (_dodgeInputState == DodgeState.IsMovingToTarget || _dodgeInputState == DodgeState.IsMovingBack) return;
+
+        _stats.ApplyDamage(damage);
     }
 
     private void MovePlayer()

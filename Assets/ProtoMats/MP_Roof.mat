@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MP_Wall
+  m_Name: MP_Roof
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
   m_Parent: {fileID: 2100000, guid: 8a861364dd489304e9720bb9c8a3d8f6, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -41,7 +41,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.93356204, b: 0.84339625, a: 1}
-    - _Color: {r: 1, g: 0.93356204, b: 0.84339625, a: 1}
+    - _BaseColor: {r: 0.8792453, g: 0.8361125, b: 0.72828054, a: 1}
+    - _Color: {r: 0.8792453, g: 0.8361125, b: 0.72828054, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
