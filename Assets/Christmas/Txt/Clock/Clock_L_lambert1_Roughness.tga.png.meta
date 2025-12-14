@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clock_L_lambert1_Roughness.tga_0: 5038567379772028034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gifts_Metallic_0: -1923060776537351350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

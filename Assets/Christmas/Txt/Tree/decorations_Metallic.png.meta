@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      decorations_Metallic_0: 5099952666849216474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

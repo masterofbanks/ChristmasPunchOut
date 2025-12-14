@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clock_L_lambert1_BaseColor.tga_0: 6822820478579287374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
