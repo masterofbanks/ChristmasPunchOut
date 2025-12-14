@@ -106,27 +106,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyAttacks:
-  - Name: Uppercut
-    Damage: 20
-    Duration: 1.3
-    CooldownTime: 2.5
   - Name: Jab
     Damage: 5
-    Duration: 0.9
-    CooldownTime: 1
+    Duration: 0.8
+    CooldownTime: 1.1
+  - Name: Leg Kick
+    Damage: 20
+    Duration: 1.1
+    CooldownTime: 1.5
   - Name: Swing
     Damage: 15
-    Duration: 1.2
-    CooldownTime: 1.5
+    Duration: 0.9
+    CooldownTime: 1.25
   CurrentAttack:
     Name: 
     Damage: 0
     Duration: 0
     CooldownTime: 0
   CurrentEnemyState: 0
-  EnemyStats: {fileID: 0}
+  EnemyStats: {fileID: 8155244359215033019}
   Player: {fileID: 0}
-  StoppingDistance: 2.54
+  StoppingDistance: 1.79
   PursuingSpeed: 2
   HitStunDuration: 1.1
   BlockHitStunDuration: 0.7

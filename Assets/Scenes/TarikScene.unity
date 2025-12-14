@@ -281,7 +281,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1523233153}
+      - m_Target: {fileID: 854285912}
         m_TargetAssemblyTypeName: BaseEnemy, Assembly-CSharp
         m_MethodName: ApplyAHit
         m_Mode: 4
@@ -708,6 +708,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 276461487395fc74098dc73368fdf61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &854285912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5543378979902449041, guid: c283e4961f0c2734088d7df8583a79ff, type: 3}
+  m_PrefabInstance: {fileID: 1802173964}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485a3dacc0063b54d85f63a0bd1997d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1281631766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -831,7 +842,7 @@ PrefabInstance:
     - target: {fileID: 8657591495863553761, guid: 98f5086840f390349bc160e885449a10, type: 3}
       propertyPath: _stats
       value: 
-      objectReference: {fileID: 1523233151}
+      objectReference: {fileID: 854285910}
     - target: {fileID: 8810239483924783511, guid: 98f5086840f390349bc160e885449a10, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -855,6 +866,10 @@ PrefabInstance:
     - target: {fileID: 2651347381827654729, guid: d5377fdd744d462458325f517118bba7, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651347381827654729, guid: d5377fdd744d462458325f517118bba7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5128931695939971355, guid: d5377fdd744d462458325f517118bba7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -924,17 +939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 276461487395fc74098dc73368fdf61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1523233153 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5543378979902449041, guid: d5377fdd744d462458325f517118bba7, type: 3}
-  m_PrefabInstance: {fileID: 1368371993}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 485a3dacc0063b54d85f63a0bd1997d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1802173964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -949,7 +953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2651347381827654729, guid: c283e4961f0c2734088d7df8583a79ff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5128931695939971355, guid: c283e4961f0c2734088d7df8583a79ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -996,9 +1000,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1996327343}
     - target: {fileID: 5543378979902449041, guid: c283e4961f0c2734088d7df8583a79ff, type: 3}
-      propertyPath: EnemyStats
-      value: 
-      objectReference: {fileID: 854285910}
+      propertyPath: BlockHitStunDuration
+      value: 0.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

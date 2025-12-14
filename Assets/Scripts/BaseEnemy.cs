@@ -157,7 +157,7 @@ public class BaseEnemy : MonoBehaviour
 
     public void ApplyAHit(float amountOfDamage)
     {
-        if(CurrentEnemyState != EnemyStates.Blocking)
+        if(CurrentEnemyState != EnemyStates.Blocking && CurrentEnemyState != EnemyStates.Hit && CurrentEnemyState != EnemyStates.BlockHit)
         {
             EnemyStats.DealDamage(amountOfDamage);
             if (EnemyStats.IsAlive())
