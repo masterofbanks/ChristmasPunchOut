@@ -38,6 +38,12 @@ public class PlayerController : MonoBehaviour
     [Header("------------------- ANIMATOR SETTINGS -------------------")]
     [Header("Needs to be Set In Inspector")]
     [SerializeField] private Animator _animator;
+
+    [Space]
+    [Space]
+    [Header("------------------- ATTACKING -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] private PlayerHitbox _attackHitbox;
     
     private void Start()
     {
@@ -93,6 +99,11 @@ public class PlayerController : MonoBehaviour
     public void OnAttackRight(InputValue value)
     {
         _animator.SetTrigger("AttackRight");
+    }
+
+    public void ActivateAttackHitbox()
+    {
+        _attackHitbox.gameObject.SetActive(true);
     }
 
     public void ResetDodge()
