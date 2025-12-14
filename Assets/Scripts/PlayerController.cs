@@ -16,6 +16,12 @@ public class PlayerController : MonoBehaviour
     [Space]
     [Header("------------------- DODGE SETTINGS -------------------")]
     [Header("Needs to be Set In Inspector")]
+    [SerializeField] private CharacterStats _stats;
+
+    [Space]
+    [Space]
+    [Header("------------------- DODGE SETTINGS -------------------")]
+    [Header("Needs to be Set In Inspector")]
     [SerializeField] float _dodgeSpeed_LowerIsFaster = .3f;
     float _dodgeTimer;
     [SerializeField] float _dodgeDistance = 2;
@@ -109,6 +115,13 @@ public class PlayerController : MonoBehaviour
     public void ResetDodge()
     {
         _dodgeInputState = DodgeState.CanDodge;
+    }
+
+    public void ApplyAHit(float damage)
+    {
+        if (_dodgeInputState == DodgeState.IsMovingToTarget && _dodgeInputState == DodgeState.IsMovingBack) return;
+
+        _stats.ApplyDamage(damage);
     }
 
     private void MovePlayer()
