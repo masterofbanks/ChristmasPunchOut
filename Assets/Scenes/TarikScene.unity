@@ -880,10 +880,6 @@ PrefabInstance:
       propertyPath: StoppingDistance
       value: 1.1
       objectReference: {fileID: 0}
-    - target: {fileID: 5955495551636268654, guid: d5377fdd744d462458325f517118bba7, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 3531516733063667398, guid: 1d24ad94d1a305f45b877f43a94c29b0, type: 3}
     - target: {fileID: 6186342875802003030, guid: d5377fdd744d462458325f517118bba7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
