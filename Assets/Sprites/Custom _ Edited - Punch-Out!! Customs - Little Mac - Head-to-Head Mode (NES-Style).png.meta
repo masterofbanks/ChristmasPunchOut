@@ -1,0 +1,4009 @@
+fileFormatVersion: 2
+guid: 1d24ad94d1a305f45b877f43a94c29b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2499071572878910874
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_0
+  - first:
+      213: 7966812504407289174
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_1
+  - first:
+      213: 6306775757758187223
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_2
+  - first:
+      213: 4511235992009377001
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_3
+  - first:
+      213: -2475789667759721577
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_4
+  - first:
+      213: -885274483105886787
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_5
+  - first:
+      213: -5742359897542499103
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_6
+  - first:
+      213: -383896475636551915
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_7
+  - first:
+      213: 8923978763829226226
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_8
+  - first:
+      213: 5587679545076588938
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_9
+  - first:
+      213: 268817390069118943
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_10
+  - first:
+      213: -1069150062098291417
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_11
+  - first:
+      213: 6019285759466516300
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_12
+  - first:
+      213: 3602118088918103687
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_13
+  - first:
+      213: -1063630175367410063
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_14
+  - first:
+      213: -2904225617086065628
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_15
+  - first:
+      213: -5996026591854943471
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_16
+  - first:
+      213: -5335122394812307565
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_17
+  - first:
+      213: -8668795434295991156
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_18
+  - first:
+      213: 3534993025156870507
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_19
+  - first:
+      213: -6460303259830547155
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_20
+  - first:
+      213: 1389292951684554790
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_21
+  - first:
+      213: 5615008234376539186
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_22
+  - first:
+      213: 1757550453108949443
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_23
+  - first:
+      213: -7698986378230084284
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_24
+  - first:
+      213: 6911815430791038365
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_25
+  - first:
+      213: 576107038548925933
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_26
+  - first:
+      213: -8903836780498663448
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_27
+  - first:
+      213: 4770457059163753875
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_28
+  - first:
+      213: 2360550410947495015
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_29
+  - first:
+      213: 3375616082533842451
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_30
+  - first:
+      213: 5003053564675323553
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_31
+  - first:
+      213: 2014444889776643872
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_32
+  - first:
+      213: 1197000122431190232
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_33
+  - first:
+      213: -272156286306355323
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_34
+  - first:
+      213: -2449867297909578083
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_35
+  - first:
+      213: 4885586691393146760
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_36
+  - first:
+      213: -6294566249655989798
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_37
+  - first:
+      213: 6012765452748704719
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_38
+  - first:
+      213: 8222574585089784194
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_39
+  - first:
+      213: -1471230778198760545
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_40
+  - first:
+      213: -9070869103158729208
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_41
+  - first:
+      213: -7388837835859757694
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_42
+  - first:
+      213: -598991504745247224
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_43
+  - first:
+      213: -7332981391382259597
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_44
+  - first:
+      213: 5906214284592775072
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_45
+  - first:
+      213: 8978392368467525534
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_46
+  - first:
+      213: -4298306887853725374
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_47
+  - first:
+      213: -4842154131229927494
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_48
+  - first:
+      213: -8117614099607966637
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_49
+  - first:
+      213: -6460243754685905536
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_50
+  - first:
+      213: -1344964321717603665
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_51
+  - first:
+      213: -95043834764253384
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_52
+  - first:
+      213: -6671701915211051292
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_53
+  - first:
+      213: 5695773146717269070
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_54
+  - first:
+      213: -740211822050745015
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_55
+  - first:
+      213: 3356169412311654395
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_56
+  - first:
+      213: -5620112565613064588
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_57
+  - first:
+      213: -3072067066294981384
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_58
+  - first:
+      213: 7229157117502227620
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_59
+  - first:
+      213: -9109963315183731050
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_60
+  - first:
+      213: -4548192608521814356
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_61
+  - first:
+      213: 6437199652462783844
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_62
+  - first:
+      213: 5197902199408896141
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_63
+  - first:
+      213: -8217968102555908658
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_64
+  - first:
+      213: -7566106998098327979
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_65
+  - first:
+      213: 5078948789141989364
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_66
+  - first:
+      213: 7342757302405106842
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_67
+  - first:
+      213: -8546550240637075695
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_68
+  - first:
+      213: 301372822778822340
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_69
+  - first:
+      213: 55005157590779665
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_70
+  - first:
+      213: 4129673613866556960
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_71
+  - first:
+      213: 6771684961475539388
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_72
+  - first:
+      213: -4990932687503388844
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_73
+  - first:
+      213: -3918629656193756483
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_74
+  - first:
+      213: 1035531091266395728
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_75
+  - first:
+      213: -1418412258604935402
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_76
+  - first:
+      213: 3096391639945684125
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_77
+  - first:
+      213: -3152914578625203715
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_78
+  - first:
+      213: 1752548535380985698
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_79
+  - first:
+      213: -7135808472162073426
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_80
+  - first:
+      213: 2922006808519858026
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_81
+  - first:
+      213: -7403348244472805351
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_82
+  - first:
+      213: -5990869543289087476
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_83
+  - first:
+      213: 2758903797978964375
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_84
+  - first:
+      213: 3196249309495335755
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_85
+  - first:
+      213: 7398525669852089595
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_86
+  - first:
+      213: -8092068401228255669
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_87
+  - first:
+      213: 3531516733063667398
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_88
+  - first:
+      213: 6775850162773918788
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_89
+  - first:
+      213: -1643846108148480464
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_90
+  - first:
+      213: 6145761887549128863
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_91
+  - first:
+      213: 8104267879226304859
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_92
+  - first:
+      213: 5837151991542244641
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_93
+  - first:
+      213: 5254397043275468762
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_94
+  - first:
+      213: 1179035217274551448
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_95
+  - first:
+      213: -9060624857150496017
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_96
+  - first:
+      213: 865523812380922468
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_97
+  - first:
+      213: 4482839980130838610
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_98
+  - first:
+      213: 424750888958054526
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_99
+  - first:
+      213: 8551125025524822189
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_100
+  - first:
+      213: 8577293081251978007
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_101
+  - first:
+      213: -8677425628574379553
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_102
+  - first:
+      213: -7101445243678720633
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_103
+  - first:
+      213: 2242285419574180117
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_104
+  - first:
+      213: 6448918211949492812
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_105
+  - first:
+      213: -5063043758592903923
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_106
+  - first:
+      213: -774859827774113767
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_107
+  - first:
+      213: -3011365274837782587
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_108
+  - first:
+      213: -5146597684743219586
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_109
+  - first:
+      213: -1325190762597565176
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_110
+  - first:
+      213: -3052497324066739720
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_111
+  - first:
+      213: 8886992604904944061
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_112
+  - first:
+      213: 8807893492276175431
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_113
+  - first:
+      213: -70796256216236677
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_114
+  - first:
+      213: -5302855450414424973
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_115
+  - first:
+      213: -811784388817007109
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_116
+  - first:
+      213: -557275023298256184
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_117
+  - first:
+      213: 1673107016073212470
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_118
+  - first:
+      213: -6055495253965681310
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_119
+  - first:
+      213: 1306858924231423031
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_120
+  - first:
+      213: 1030876739351311682
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_121
+  - first:
+      213: 6848554667518691263
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_122
+  - first:
+      213: 4526960936426923220
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_123
+  - first:
+      213: -546507236640479864
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_124
+  - first:
+      213: -7185106852387405657
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_125
+  - first:
+      213: 6054342558501031329
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_126
+  - first:
+      213: 3521959794733265900
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_127
+  - first:
+      213: -4971949367189440578
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_128
+  - first:
+      213: -3215145439893056151
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_129
+  - first:
+      213: -7618170357404919176
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_130
+  - first:
+      213: 4294753344387776535
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_131
+  - first:
+      213: 6672329188717856288
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_132
+  - first:
+      213: 4118525354019064874
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_133
+  - first:
+      213: 4489735331718615641
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_134
+  - first:
+      213: -3441489948821944359
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_135
+  - first:
+      213: 7347535746300923592
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_136
+  - first:
+      213: -2796339243017574865
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_137
+  - first:
+      213: 4803557660459262052
+    second: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+      (NES-Style)_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 812
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9569b9da5c7ea220800000000000000
+      internalID: 2499071572878910874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 812
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d265543cdcf8e60800000000000000
+      internalID: 7966812504407289174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 812
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6c83f032b268750800000000000000
+      internalID: 6306775757758187223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 812
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e40da1bb312b9e30800000000000000
+      internalID: 4511235992009377001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 812
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793799a1a6a34add0800000000000000
+      internalID: -2475789667759721577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 816
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd81c94c8fd6b3f0800000000000000
+      internalID: -885274483105886787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 816
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4e786f81a0f40b0800000000000000
+      internalID: -5742359897542499103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 812
+        width: 23
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fa82b70302caaf0800000000000000
+      internalID: -383896475636551915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 811
+        width: 20
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2faab29876758db70800000000000000
+      internalID: 8923978763829226226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_9
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 814
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81a10301fc6b8d40800000000000000
+      internalID: 5587679545076588938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 814
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd77484fdf70bb300800000000000000
+      internalID: 268817390069118943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_11
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 816
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7256b01eead9921f0800000000000000
+      internalID: -1069150062098291417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 811
+        width: 23
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fa196b18cc88350800000000000000
+      internalID: 6019285759466516300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 811
+        width: 22
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786f8f8215b4df130800000000000000
+      internalID: 3602118088918103687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 819
+        width: 31
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ec6d8adf93d31f0800000000000000
+      internalID: -1063630175367410063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 811
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424def1403e12b7d0800000000000000
+      internalID: -2904225617086065628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_16
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113a0b04595d9cca0800000000000000
+      internalID: -5996026591854943471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_17
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3972bf7d276d5f5b0800000000000000
+      internalID: -5335122394812307565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_18
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8462445b7042b780800000000000000
+      internalID: -8668795434295991156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_19
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6175fb5d61de0130800000000000000
+      internalID: 3534993025156870507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_20
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d8080d9646856a0800000000000000
+      internalID: -6460303259830547155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_21
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620ac1a2492c74310800000000000000
+      internalID: 1389292951684554790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_22
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 827
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c28e45d348ced40800000000000000
+      internalID: 5615008234376539186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 738
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1c26043d2146810800000000000000
+      internalID: 1757550453108949443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 738
+        width: 24
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d46031ea4b72590800000000000000
+      internalID: -7698986378230084284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_25
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 739
+        width: 22
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d950d519383bbef50800000000000000
+      internalID: 6911815430791038365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_26
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 739
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded9f499c4ebef700800000000000000
+      internalID: 576107038548925933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_27
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 739
+        width: 22
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7c1586f973f6480800000000000000
+      internalID: -8903836780498663448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_28
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 738
+        width: 24
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dc5bb9b61143240800000000000000
+      internalID: 4770457059163753875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_29
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 741
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7648dee871c52c020800000000000000
+      internalID: 2360550410947495015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_30
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 739
+        width: 26
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e768931f898de20800000000000000
+      internalID: 3375616082533842451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_31
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 738
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a679b2b5ba6e6540800000000000000
+      internalID: 5003053564675323553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_32
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 739
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02fdcba44feb4fb10800000000000000
+      internalID: 2014444889776643872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_33
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 738
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d43c95f4499c9010800000000000000
+      internalID: 1197000122431190232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_34
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 738
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587f15fac4b193cf0800000000000000
+      internalID: -272156286306355323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_35
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 739
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96e0492ca2500ed0800000000000000
+      internalID: -2449867297909578083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_36
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 739
+        width: 17
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f4ddbf5371dc340800000000000000
+      internalID: 4885586691393146760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_37
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 739
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad98712985535a8a0800000000000000
+      internalID: -6294566249655989798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_38
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 739
+        width: 21
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbc3d08252a17350800000000000000
+      internalID: 6012765452748704719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_39
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 739
+        width: 21
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2897e6325047c1270800000000000000
+      internalID: 8222574585089784194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_40
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9367d2f663259be0800000000000000
+      internalID: -1471230778198760545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_41
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80668263c9ccd1280800000000000000
+      internalID: -9070869103158729208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_42
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285fc92d223957990800000000000000
+      internalID: -7388837835859757694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_43
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ece286664ffa7f0800000000000000
+      internalID: -598991504745247224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_44
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3785c1eb6440c3a90800000000000000
+      internalID: -7332981391382259597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_45
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af7d70799617f150800000000000000
+      internalID: 5906214284592775072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_46
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 754
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fb5902a48a99c70800000000000000
+      internalID: 8978392368467525534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_47
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 660
+        width: 33
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2492ddda8a85954c0800000000000000
+      internalID: -4298306887853725374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_48
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 659
+        width: 28
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab79954f8763dccb0800000000000000
+      internalID: -4842154131229927494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_49
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 659
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c2a214cf0785f80800000000000000
+      internalID: -8117614099607966637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_50
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 660
+        width: 24
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085c28f688a9856a0800000000000000
+      internalID: -6460243754685905536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_51
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 660
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2b278431ab55de0800000000000000
+      internalID: -1344964321717603665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_52
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 660
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83729c6c2265eaef0800000000000000
+      internalID: -95043834764253384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_53
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 660
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee4d80d47a5963a0800000000000000
+      internalID: -6671701915211051292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_54
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 660
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4caa4bdf737b0f40800000000000000
+      internalID: 5695773146717269070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_55
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 660
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945ee18054d3ab5f0800000000000000
+      internalID: -740211822050745015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_56
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 660
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff1eda7c42839e20800000000000000
+      internalID: 3356169412311654395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_57
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 661
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e8ce0f5695102b0800000000000000
+      internalID: -5620112565613064588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_58
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 661
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcaf4b9743dd55d0800000000000000
+      internalID: -3072067066294981384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_59
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 660
+        width: 22
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4053eb810235460800000000000000
+      internalID: 7229157117502227620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_60
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 660
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e32a9a1a8e29180800000000000000
+      internalID: -9109963315183731050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_61
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 660
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caefffe7be291e0c0800000000000000
+      internalID: -4548192608521814356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_62
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46def496af6855950800000000000000
+      internalID: 6437199652462783844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_63
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d882dfcb288a22840800000000000000
+      internalID: 5197902199408896141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_64
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec50aa72d89e3fd80800000000000000
+      internalID: -8217968102555908658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_65
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55680cda5c9cff690800000000000000
+      internalID: -7566106998098327979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_66
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f76539a30d0c7640800000000000000
+      internalID: 5078948789141989364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_67
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c03c9ecd6b6e560800000000000000
+      internalID: 7342757302405106842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_68
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 681
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f3cc376dd846980800000000000000
+      internalID: -8546550240637075695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_69
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 580
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce30be4cf0be2400800000000000000
+      internalID: 301372822778822340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_70
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 580
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117430f36ea63c000800000000000000
+      internalID: 55005157590779665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_71
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 580
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ed1d8954c8f4930800000000000000
+      internalID: 4129673613866556960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_72
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 580
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1ba93389bd9fd50800000000000000
+      internalID: 6771684961475539388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_73
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 580
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f897fe925acbab0800000000000000
+      internalID: -4990932687503388844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_74
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 580
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db29248e61b3e99c0800000000000000
+      internalID: -3918629656193756483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_75
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 580
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e5ec08a02fe5e00800000000000000
+      internalID: 1035531091266395728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_76
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 580
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6171bccd099c05ce0800000000000000
+      internalID: -1418412258604935402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_77
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 580
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d94a3788ac798fa20800000000000000
+      internalID: 3096391639945684125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_78
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 580
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1f4e545e89e34d0800000000000000
+      internalID: -3152914578625203715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_79
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 580
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267c3078b9d425810800000000000000
+      internalID: 1752548535380985698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_80
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 580
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea48e8f600488fc90800000000000000
+      internalID: -7135808472162073426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_81
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67591df5bd0d8820800000000000000
+      internalID: 2922006808519858026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_82
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918cfab0ff5024990800000000000000
+      internalID: -7403348244472805351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_83
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a1c8034e72cdca0800000000000000
+      internalID: -5990869543289087476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_84
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79123001368994620800000000000000
+      internalID: 2758903797978964375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_85
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b9e0200db5b5c20800000000000000
+      internalID: 3196249309495335755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_86
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc842dc5e7dca660800000000000000
+      internalID: 7398525669852089595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_87
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 605
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e60a6a9a233bf80800000000000000
+      internalID: -8092068401228255669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_88
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 436
+        width: 47
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce9b9802c7720130800000000000000
+      internalID: 3531516733063667398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_89
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 436
+        width: 44
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4448963b2d7a80e50800000000000000
+      internalID: 6775850162773918788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_90
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 435
+        width: 44
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036c6629ca2ef29e0800000000000000
+      internalID: -1643846108148480464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_91
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 435
+        width: 44
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90008500e12a4550800000000000000
+      internalID: 6145761887549128863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_92
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 436
+        width: 44
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5964e9a2b4287070800000000000000
+      internalID: 8104267879226304859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_93
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 436
+        width: 47
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125e6db4fcab10150800000000000000
+      internalID: 5837151991542244641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_94
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 436
+        width: 46
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf0c49954e5be840800000000000000
+      internalID: 5254397043275468762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_95
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 436
+        width: 46
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c33578846cc5010800000000000000
+      internalID: 1179035217274551448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_96
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 435
+        width: 46
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2687a92b1324280800000000000000
+      internalID: -9060624857150496017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_97
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 436
+        width: 56
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4625b955255f20c00800000000000000
+      internalID: 865523812380922468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_98
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 436
+        width: 56
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2582e98f53f363e30800000000000000
+      internalID: 4482839980130838610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_99
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70506edea405e500800000000000000
+      internalID: 424750888958054526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_100
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da03c58a7e2bba670800000000000000
+      internalID: 8551125025524822189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_101
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b907aec9aa80770800000000000000
+      internalID: 8577293081251978007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_102
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd114f3ad57939780800000000000000
+      internalID: -8677425628574379553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_103
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d74aa0d29927d90800000000000000
+      internalID: -7101445243678720633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_104
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519b1ce75b23e1f10800000000000000
+      internalID: 2242285419574180117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_105
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 532
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4afbc822f82f7950800000000000000
+      internalID: 6448918211949492812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_106
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05bfc6d6847cb9b0800000000000000
+      internalID: -5063043758592903923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_107
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918bdce87152f35f0800000000000000
+      internalID: -774859827774113767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_108
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfe858cc3b7536d0800000000000000
+      internalID: -3011365274837782587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_109
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76580f6cac9398b0800000000000000
+      internalID: -5146597684743219586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_110
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d3eb7c50afb9de0800000000000000
+      internalID: -1325190762597565176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_111
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9eb294bd953a5d0800000000000000
+      internalID: -3052497324066739720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_112
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 459
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1f1e850b0f45b70800000000000000
+      internalID: 8886992604904944061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_113
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 292
+        width: 48
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742a89a077ceb3a70800000000000000
+      internalID: 8807893492276175431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_114
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 300
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dbdc81e2b740ff0800000000000000
+      internalID: -70796256216236677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_115
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 298
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cddc640197866b0800000000000000
+      internalID: -5302855450414424973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_116
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 292
+        width: 47
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfdca5e3666fbb4f0800000000000000
+      internalID: -811784388817007109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_117
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 300
+        width: 48
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c22c12a1592448f0800000000000000
+      internalID: -557275023298256184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_118
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 308
+        width: 56
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632f14477f1183710800000000000000
+      internalID: 1673107016073212470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_119
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 308
+        width: 50
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26dcf40662f86fba0800000000000000
+      internalID: -6055495253965681310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_120
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 308
+        width: 61
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734fc5e7445e22210800000000000000
+      internalID: 1306858924231423031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_121
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 308
+        width: 48
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2457f30cee86e4e00800000000000000
+      internalID: 1030876739351311682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_122
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 308
+        width: 45
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb78b465f24fa0f50800000000000000
+      internalID: 6848554667518691263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_123
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 308
+        width: 56
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4ebcf9cfef2de30800000000000000
+      internalID: 4526960936426923220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_124
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 232
+        width: 256
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8852dd4509a6a68f0800000000000000
+      internalID: -546507236640479864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_125
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 232
+        width: 256
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a04936d26f594c90800000000000000
+      internalID: -7185106852387405657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_126
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 148
+        width: 47
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adcbfbca78550450800000000000000
+      internalID: 6054342558501031329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_127
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 148
+        width: 52
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3b84ee5c380e030800000000000000
+      internalID: 3521959794733265900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_128
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 148
+        width: 56
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7f17f9466100bb0800000000000000
+      internalID: -4971949367189440578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_129
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 148
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96515f9c1428163d0800000000000000
+      internalID: -3215145439893056151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_130
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 148
+        width: 49
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a18783c62d64690800000000000000
+      internalID: -7618170357404919176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_131
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 149
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710872289670a9b30800000000000000
+      internalID: 4294753344387776535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_132
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 144
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0268ffdab00e89c50800000000000000
+      internalID: 6672329188717856288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_133
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 148
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c0fb41df0f72930800000000000000
+      internalID: 4118525354019064874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_134
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 149
+        width: 62
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952db9e1f7ebe4e30800000000000000
+      internalID: 4489735331718615641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_135
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 7
+        width: 256
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d70466102f5d30d0800000000000000
+      internalID: -3441489948821944359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_136
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 7
+        width: 255
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce40c415d0b7f560800000000000000
+      internalID: 7347535746300923592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_137
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 47
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26e37c26486139d0800000000000000
+      internalID: -2796339243017574865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode
+        (NES-Style)_138
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 4
+        width: 24
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460e7c9ed3aa9a240800000000000000
+      internalID: 4803557660459262052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b8d6e6b3881e3ce4db746609e37448a7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_0: 2499071572878910874
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_1: 7966812504407289174
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_10: 268817390069118943
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_100: 8551125025524822189
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_101: 8577293081251978007
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_102: -8677425628574379553
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_103: -7101445243678720633
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_104: 2242285419574180117
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_105: 6448918211949492812
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_106: -5063043758592903923
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_107: -774859827774113767
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_108: -3011365274837782587
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_109: -5146597684743219586
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_11: -1069150062098291417
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_110: -1325190762597565176
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_111: -3052497324066739720
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_112: 8886992604904944061
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_113: 8807893492276175431
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_114: -70796256216236677
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_115: -5302855450414424973
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_116: -811784388817007109
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_117: -557275023298256184
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_118: 1673107016073212470
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_119: -6055495253965681310
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_12: 6019285759466516300
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_120: 1306858924231423031
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_121: 1030876739351311682
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_122: 6848554667518691263
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_123: 4526960936426923220
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_124: -546507236640479864
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_125: -7185106852387405657
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_126: 6054342558501031329
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_127: 3521959794733265900
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_128: -4971949367189440578
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_129: -3215145439893056151
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_13: 3602118088918103687
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_130: -7618170357404919176
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_131: 4294753344387776535
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_132: 6672329188717856288
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_133: 4118525354019064874
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_134: 4489735331718615641
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_135: -3441489948821944359
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_136: 7347535746300923592
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_137: -2796339243017574865
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_138: 4803557660459262052
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_14: -1063630175367410063
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_15: -2904225617086065628
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_16: -5996026591854943471
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_17: -5335122394812307565
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_18: -8668795434295991156
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_19: 3534993025156870507
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_2: 6306775757758187223
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_20: -6460303259830547155
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_21: 1389292951684554790
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_22: 5615008234376539186
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_23: 1757550453108949443
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_24: -7698986378230084284
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_25: 6911815430791038365
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_26: 576107038548925933
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_27: -8903836780498663448
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_28: 4770457059163753875
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_29: 2360550410947495015
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_3: 4511235992009377001
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_30: 3375616082533842451
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_31: 5003053564675323553
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_32: 2014444889776643872
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_33: 1197000122431190232
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_34: -272156286306355323
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_35: -2449867297909578083
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_36: 4885586691393146760
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_37: -6294566249655989798
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_38: 6012765452748704719
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_39: 8222574585089784194
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_4: -2475789667759721577
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_40: -1471230778198760545
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_41: -9070869103158729208
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_42: -7388837835859757694
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_43: -598991504745247224
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_44: -7332981391382259597
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_45: 5906214284592775072
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_46: 8978392368467525534
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_47: -4298306887853725374
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_48: -4842154131229927494
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_49: -8117614099607966637
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_5: -885274483105886787
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_50: -6460243754685905536
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_51: -1344964321717603665
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_52: -95043834764253384
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_53: -6671701915211051292
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_54: 5695773146717269070
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_55: -740211822050745015
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_56: 3356169412311654395
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_57: -5620112565613064588
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_58: -3072067066294981384
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_59: 7229157117502227620
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_6: -5742359897542499103
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_60: -9109963315183731050
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_61: -4548192608521814356
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_62: 6437199652462783844
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_63: 5197902199408896141
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_64: -8217968102555908658
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_65: -7566106998098327979
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_66: 5078948789141989364
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_67: 7342757302405106842
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_68: -8546550240637075695
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_69: 301372822778822340
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_7: -383896475636551915
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_70: 55005157590779665
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_71: 4129673613866556960
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_72: 6771684961475539388
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_73: -4990932687503388844
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_74: -3918629656193756483
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_75: 1035531091266395728
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_76: -1418412258604935402
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_77: 3096391639945684125
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_78: -3152914578625203715
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_79: 1752548535380985698
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_8: 8923978763829226226
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_80: -7135808472162073426
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_81: 2922006808519858026
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_82: -7403348244472805351
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_83: -5990869543289087476
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_84: 2758903797978964375
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_85: 3196249309495335755
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_86: 7398525669852089595
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_87: -8092068401228255669
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_88: 3531516733063667398
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_89: 6775850162773918788
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_9: 5587679545076588938
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_90: -1643846108148480464
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_91: 6145761887549128863
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_92: 8104267879226304859
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_93: 5837151991542244641
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_94: 5254397043275468762
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_95: 1179035217274551448
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_96: -9060624857150496017
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_97: 865523812380922468
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_98: 4482839980130838610
+      Custom _ Edited - Punch-Out!! Customs - Little Mac - Head-to-Head Mode (NES-Style)_99: 424750888958054526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
