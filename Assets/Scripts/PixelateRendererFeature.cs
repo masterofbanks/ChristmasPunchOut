@@ -13,6 +13,8 @@ public class PixelateRendererFeature : ScriptableRendererFeature
         public int targetWidth = 320;
         [Range(64, 1080)]
         public int targetHeight = 180;
+        [Tooltip("Only apply pixelation to base cameras, not overlay cameras")]
+        public bool onlyApplyToBaseCamera = true;
     }
 
     public Settings settings = new Settings();
@@ -25,6 +27,12 @@ public class PixelateRendererFeature : ScriptableRendererFeature
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
+        // Skip overlay cameras if the setting is enabled
+        if (settings.onlyApplyToBaseCamera && renderingData.cameraData.renderType == CameraRenderType.Overlay)
+        {
+            return;
+        }
+
         renderer.EnqueuePass(renderPass);
     }
 
@@ -52,6 +60,7 @@ public class PixelateRendererFeature : ScriptableRendererFeature
             if (cameraData.camera.cameraType != CameraType.Game)
                 return;
 
+            // Create color texture descriptor (no depth/stencil)
             RenderTextureDescriptor descriptor = cameraData.cameraTargetDescriptor;
             descriptor.width = settings.targetWidth;
             descriptor.height = settings.targetHeight;
@@ -68,6 +77,7 @@ public class PixelateRendererFeature : ScriptableRendererFeature
 
                 builder.UseTexture(source, AccessFlags.Read);
                 builder.SetRenderAttachment(tempTexture, 0, AccessFlags.Write);
+
                 builder.SetRenderFunc<PassData>((PassData data, RasterGraphContext context) =>
                 {
                     Blitter.BlitTexture(context.cmd, data.source, new Vector4(1, 1, 0, 0), 0, false);
@@ -82,6 +92,7 @@ public class PixelateRendererFeature : ScriptableRendererFeature
 
                 builder.UseTexture(tempTexture, AccessFlags.Read);
                 builder.SetRenderAttachment(source, 0, AccessFlags.Write);
+
                 builder.SetRenderFunc<PassData>((PassData data, RasterGraphContext context) =>
                 {
                     Blitter.BlitTexture(context.cmd, data.source, new Vector4(1, 1, 0, 0), 0, false);
