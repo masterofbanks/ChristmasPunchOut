@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestHitBehavior : MonoBehaviour
@@ -14,19 +15,18 @@ public class TestHitBehavior : MonoBehaviour
         statsScript = GetComponent<CharacterStats>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Hit"))
+        if (other.gameObject.CompareTag("Hit"))
         {
-            BaseEnemy enemyScript = collision.gameObject.GetComponentInParent<BaseEnemy>();
-            statsScript.DealDamage(enemyScript.AttackDamage);
+            BaseEnemy enemyScript = other.gameObject.GetComponentInParent<BaseEnemy>();
+            statsScript.DealDamage(enemyScript.CurrentAttack.Damage);
             StartCoroutine(FlashRed());
         }
     }
 
     IEnumerator FlashRed()
     {
-        Debug.Log("Trying to turn the red");
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(HitDuration);
         spriteRenderer.color = Color.white;
