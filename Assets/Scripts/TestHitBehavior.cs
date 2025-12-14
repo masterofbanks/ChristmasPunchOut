@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestHitBehavior : MonoBehaviour
@@ -14,11 +15,11 @@ public class TestHitBehavior : MonoBehaviour
         statsScript = GetComponent<CharacterStats>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Hit"))
+        if (other.gameObject.CompareTag("Hit"))
         {
-            BaseEnemy enemyScript = collision.gameObject.GetComponentInParent<BaseEnemy>();
+            BaseEnemy enemyScript = other.gameObject.GetComponentInParent<BaseEnemy>();
             statsScript.DealDamage(enemyScript.CurrentAttack.Damage);
             StartCoroutine(FlashRed());
         }

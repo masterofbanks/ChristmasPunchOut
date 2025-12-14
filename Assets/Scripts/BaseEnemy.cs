@@ -42,17 +42,17 @@ public class BaseEnemy : MonoBehaviour
     private float _timeBetweenAttacks = 0f;
     private float _timeAttackCounter = 0f;
     private float _timeBetweenAttackCounter = 0f;
-    private Vector2 _vectorToPlayer;
+    private Vector3 _vectorToPlayer;
     
     
     //components
-    private Rigidbody2D _rb2D;
+    private Rigidbody _rb;
     private Animator _anime;
     private System.Random rndGen;
 
     private void Awake()
     {
-        _rb2D = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody>();
         _anime = GetComponent<Animator>();
         rndGen = new System.Random();
         EnemyStats = GetComponent<CharacterStats>();
@@ -118,7 +118,7 @@ public class BaseEnemy : MonoBehaviour
         else
         {
             CurrentEnemyState = EnemyStates.Approaching;
-            _rb2D.MovePosition(_rb2D.position + _vectorToPlayer.normalized * PursuingSpeed * Time.fixedDeltaTime);
+            _rb.MovePosition(_rb.position + _vectorToPlayer.normalized * PursuingSpeed * Time.fixedDeltaTime);
         }
     }
 
