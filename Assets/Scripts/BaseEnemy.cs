@@ -7,7 +7,8 @@ public class BaseEnemy : MonoBehaviour
     {
         Idle,
         Approaching,
-        Attacking // to add: light jab attack, blocking behavior, hit beavjor, and death anims
+        Attacking, // to add: light jab attack, blocking behavior, hit beavjor, and death anims
+        Blocking
     }
 
     [System.Serializable]
@@ -99,7 +100,7 @@ public class BaseEnemy : MonoBehaviour
             {
                 _timeAttackCounter = 0f;
                 _timeBetweenAttackCounter += Time.fixedDeltaTime;
-                CurrentEnemyState = EnemyStates.Idle;
+                CurrentEnemyState = EnemyStates.Blocking;
             }
         }
 
@@ -116,7 +117,6 @@ public class BaseEnemy : MonoBehaviour
         int randomIndex = rndGen.Next(0, EnemyAttacks.Count);
         _anime.SetInteger("attack_type", randomIndex);
         CurrentAttack = EnemyAttacks[randomIndex];
-        Debug.Log("Trying to Attack");
         _timeBetweenAttackCounter = 0f;
         _timeAttackCounter = CurrentAttack.Duration;
         CurrentEnemyState = EnemyStates.Attacking;

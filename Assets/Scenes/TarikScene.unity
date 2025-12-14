@@ -795,8 +795,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1996327343}
     - target: {fileID: 5543378979902449041, guid: d5377fdd744d462458325f517118bba7, type: 3}
+      propertyPath: StoppingDistance
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543378979902449041, guid: d5377fdd744d462458325f517118bba7, type: 3}
+      propertyPath: EnemyAttacks.Array.data[0].Duration
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543378979902449041, guid: d5377fdd744d462458325f517118bba7, type: 3}
       propertyPath: EnemyAttacks.Array.data[1].Duration
-      value: 0.75
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543378979902449041, guid: d5377fdd744d462458325f517118bba7, type: 3}
+      propertyPath: EnemyAttacks.Array.data[2].Duration
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 6186342875802003030, guid: d5377fdd744d462458325f517118bba7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y

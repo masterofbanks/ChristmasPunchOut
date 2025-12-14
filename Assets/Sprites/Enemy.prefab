@@ -110,8 +110,12 @@ MonoBehaviour:
     CooldownTime: 2.5
   - Name: Jab
     Damage: 5
-    Duration: 0.5
+    Duration: 0.75
     CooldownTime: 1
+  - Name: Swing
+    Damage: 15
+    Duration: 0.8
+    CooldownTime: 1.5
   CurrentAttack:
     Name: 
     Damage: 0
