@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class CombatTrigger : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.TryGetComponent(out PlayerController controller))
+        if (other.TryGetComponent(out PlayerController controller))
         {
             controller.TriggerCombatMode();
         }
