@@ -3394,9 +3394,9 @@ TextureImporter:
         (NES-Style)_119
       rect:
         serializedVersion: 2
-        x: 328
+        x: 331
         y: 308
-        width: 50
+        width: 47
         height: 103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3417,9 +3417,9 @@ TextureImporter:
         (NES-Style)_120
       rect:
         serializedVersion: 2
-        x: 377
+        x: 379
         y: 308
-        width: 61
+        width: 59
         height: 111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

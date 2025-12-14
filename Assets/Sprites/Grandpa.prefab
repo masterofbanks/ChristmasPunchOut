@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6996942079514590395}
   - component: {fileID: 5666016385689366536}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: Grandpa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3531516733063667398, guid: 1d24ad94d1a305f45b877f43a94c29b0, type: 3}
+  m_Sprite: {fileID: -708783025850468930, guid: 877d442ab45378b4faa80357ba7dc999, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,29 +106,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyAttacks:
-  - Name: Uppercut
-    Damage: 20
-    Duration: 1.3
-    CooldownTime: 2.5
   - Name: Jab
     Damage: 5
-    Duration: 0.9
-    CooldownTime: 1
+    Duration: 0.8
+    CooldownTime: 1.1
+  - Name: Leg Kick
+    Damage: 20
+    Duration: 1.1
+    CooldownTime: 1.5
   - Name: Swing
     Damage: 15
-    Duration: 1.2
-    CooldownTime: 1.5
+    Duration: 0.9
+    CooldownTime: 1.25
   CurrentAttack:
     Name: 
     Damage: 0
     Duration: 0
     CooldownTime: 0
   CurrentEnemyState: 0
-  EnemyStats: {fileID: 0}
+  EnemyStats: {fileID: 8155244359215033019}
   Player: {fileID: 0}
-  StoppingDistance: 2.54
+  StoppingDistance: 1.79
   PursuingSpeed: 2
   HitStunDuration: 1.1
+  BlockHitStunDuration: 0.7
 --- !u!95 &7729378577720570094
 Animator:
   serializedVersion: 7
@@ -139,7 +140,7 @@ Animator:
   m_GameObject: {fileID: 2651347381827654729}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef86f60a2aadd8a45b9c81ec723233b2, type: 2}
+  m_Controller: {fileID: 9100000, guid: a13484923b06041408b1c1a8688a5eeb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -212,8 +213,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.9375, y: 7.5625, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.208707, y: 5.0303645, z: 0.2}
+  m_Center: {x: 0.13501352, y: 0.07110286, z: 0}
 --- !u!1 &5714474983142637182
 GameObject:
   m_ObjectHideFlags: 0
