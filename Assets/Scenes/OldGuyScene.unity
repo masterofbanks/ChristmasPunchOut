@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 161406549}
   m_Layer: 0
   m_Name: CurrentPlayerStats
-  m_TagString: Untagged
+  m_TagString: ahh
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,11 +814,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416582559}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &436418646 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4323783449772029084, guid: 98f5086840f390349bc160e885449a10, type: 3}
-  m_PrefabInstance: {fileID: 767317047}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &443241824
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,11 +2795,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e89842c3e94b514f874e5c47caf2bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 7933320573038154371, guid: 8ece11f8d7ba1b045973bc43d25bd916, type: 3}
-  CurrentGlobalPlayerStats: {fileID: 161406549}
-  PlayerSpawnPos: {fileID: 1780761173}
+  PlayerPrefab: {fileID: 0}
+  CurrentGlobalPlayerStats: {fileID: 0}
+  PlayerSpawnPos: {fileID: 0}
   Enemy: {fileID: 1634246606}
-  playerHealthBar: {fileID: 436418646}
+  playerHealthBar: {fileID: 0}
 --- !u!114 &1176800125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3772,11 +3767,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ece11f8d7ba1b045973bc43d25bd916, type: 3}
---- !u!4 &1780761173 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1726972271721234474, guid: 8ece11f8d7ba1b045973bc43d25bd916, type: 3}
-  m_PrefabInstance: {fileID: 1780761172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1782778666
 GameObject:
   m_ObjectHideFlags: 0
