@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/RendererFeatures.meta
+guid: e499f7c492f96314791825d1ed7b9cdd
+folderAsset: yes
+DefaultImporter:
+========
 guid: ad00b915aa7397b499513151906c9342
 PrefabImporter:
+>>>>>>>> main:Assets/Vefects/Free Fire VFX URP/Lights/VFX_Point_Light3.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

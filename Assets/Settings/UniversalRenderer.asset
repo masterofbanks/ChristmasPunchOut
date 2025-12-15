@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3664911832822721568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fd74067026c70438598a2e289c6b28, type: 3}
+  m_Name: DrunkEffectRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 550
+    drunkShader: {fileID: 4800000, guid: 9900d2be5497ad24a94049efc1607f70, type: 3}
 --- !u!114 &-3333544003851897523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,7 +60,8 @@ MonoBehaviour:
     probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
   - {fileID: -3333544003851897523}
-  m_RendererFeatureMap: 4d3546ef63dfbcd1
+  - {fileID: -3664911832822721568}
+  m_RendererFeatureMap: 4d3546ef63dfbcd1e0d379071b9e23cd
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}

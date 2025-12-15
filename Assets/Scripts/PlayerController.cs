@@ -7,10 +7,20 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    [SerializeField] private bool canFreeMove = true;
+    [SerializeField] public bool canFreeMove = true;
 
     private Vector2 movementInput;
     private Rigidbody2D rb;
+
+    [Space]
+    [Space]
+    [Header("------------------- STATE -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] private CharacterStats _stats;
+
+    [Header("Exposed In Inspector For Debugging")]
+    [SerializeField] private bool _dead;
+    
 
     [Space]
     [Space]
@@ -38,15 +48,30 @@ public class PlayerController : MonoBehaviour
     [Header("------------------- ANIMATOR SETTINGS -------------------")]
     [Header("Needs to be Set In Inspector")]
     [SerializeField] private Animator _animator;
+
+    [Space]
+    [Space]
+    [Header("------------------- ATTACKING -------------------")]
+    [Header("Needs to be Set In Inspector")]
+    [SerializeField] private PlayerHitbox _attackHitbox;
     
     private void Start()
     {
         playerCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
+        _stats = GetComponent<CharacterStats>();
+        //canFreeMove = false;
     }
 
     private void Update()
     {
+        if(_stats.Health < .01 && !_dead)
+        {
+            _dead = true;
+            _animator.SetBool("Dead", true);
+            _animator.SetTrigger("Death");
+        }
+
         MovePlayer();
 
         if(_dodgeInputState == DodgeState.IsMovingToTarget)
@@ -95,9 +120,27 @@ public class PlayerController : MonoBehaviour
         _animator.SetTrigger("AttackRight");
     }
 
+    public void ActivateAttackHitbox()
+    {
+        _attackHitbox.gameObject.SetActive(true);
+    }
+
+    public void ClearAllBlocks()
+    {
+        _dodgeInputState = DodgeState.CanDodge;
+    }
+
     public void ResetDodge()
     {
         _dodgeInputState = DodgeState.CanDodge;
+    }
+
+    public void ApplyAHit(float damage)
+    {
+        if (_dodgeInputState == DodgeState.IsMovingToTarget || _dodgeInputState == DodgeState.IsMovingBack) return;
+
+        _animator.SetTrigger("Hit");
+        _stats.DealDamage(damage);
     }
 
     private void MovePlayer()
