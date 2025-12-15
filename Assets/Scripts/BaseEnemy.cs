@@ -76,9 +76,12 @@ public class BaseEnemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _vectorToPlayer = Player.position - transform.position;
+        if(Player != null)
+        {
+            _vectorToPlayer = Player.position - transform.position;
+        }
         //only update states if the enemy is alive
-        if(CurrentEnemyState != EnemyStates.Dead)
+        if (CurrentEnemyState != EnemyStates.Dead)
             StateController();
         _anime.SetInteger("state", (int)CurrentEnemyState);
     }
