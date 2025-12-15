@@ -254,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _currentHealth: 100
+  AttackDamage: 10
   cState: 0
 --- !u!1 &4657725822604591679
 GameObject:
@@ -572,7 +573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38aff12357b3f284b8fd9fdad409297a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
 --- !u!1001 &2065451031970714185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -633,6 +633,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 220
       objectReference: {fileID: 0}
+    - target: {fileID: 7681072144442161363, guid: fea4a72e9d6088746a854bd92d487c56, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 34a5d28ccc32ed94e995e7440698e056, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
