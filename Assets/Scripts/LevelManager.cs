@@ -5,6 +5,8 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
+    public bool isAnInstance = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -14,7 +16,8 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            isAnInstance = true;
+            //Destroy(gameObject);
         }
     }
 
@@ -24,6 +27,12 @@ public class LevelManager : MonoBehaviour
     /// <param name="index"></param>
     public void LoadLevel(int index)
     {
+        if (isAnInstance)
+        {
+            Instance.LoadLevel(index);
+            return;
+        }
+
         int sceneToLoad = index;
         if(sceneToLoad < 0 || sceneToLoad >= SceneManager.sceneCountInBuildSettings)
         {
@@ -31,5 +40,10 @@ public class LevelManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
