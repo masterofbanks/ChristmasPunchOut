@@ -5,6 +5,7 @@ public class CharacterStats : MonoBehaviour
 {
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private float _currentHealth = 100;
+    [SerializeField] public float AttackDamage = 10f;
     public float MaxHealth { get { return _maxHealth; } }
 
     public float Health 
@@ -15,11 +16,6 @@ public class CharacterStats : MonoBehaviour
             float preventedFromBeingNegative = Mathf.Max(0, cappedToMaxHealth);
             return preventedFromBeingNegative; 
         } 
-    }
-
-    public void ApplyDamage(float damage)
-    {
-        _currentHealth -= damage;
     }
 
 
@@ -57,11 +53,13 @@ public class CharacterStats : MonoBehaviour
     {
         _maxHealth = newStats._maxHealth;
         _currentHealth = _maxHealth;
+        AttackDamage = newStats.AttackDamage;
     }
 
     public void ChangeStats(float multiplier)
     {
         _maxHealth *= multiplier;
         _currentHealth = _maxHealth;
+        AttackDamage *= multiplier;
     }
 }

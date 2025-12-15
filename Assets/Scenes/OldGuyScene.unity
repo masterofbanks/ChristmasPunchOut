@@ -592,6 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _currentHealth: 100
+  AttackDamage: 10
   cState: 0
 --- !u!1001 &321128427
 PrefabInstance:
@@ -2805,6 +2806,8 @@ MonoBehaviour:
   PlayerSpawnPos: {fileID: 1780761173}
   Enemy: {fileID: 1634246606}
   playerHealthBar: {fileID: 767317048}
+  nextSceneName: WinCondition
+  playerIsInitiallyInCombatMode: 1
 --- !u!114 &1176800125
 MonoBehaviour:
   m_ObjectHideFlags: 0

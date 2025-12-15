@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    [SerializeField] private bool canFreeMove = true;
+    [SerializeField] public bool canFreeMove = true;
 
     private Vector2 movementInput;
     private Rigidbody2D rb;
@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         playerCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         _stats = GetComponent<CharacterStats>();
+        //canFreeMove = false;
     }
 
     private void Update()
@@ -139,7 +140,7 @@ public class PlayerController : MonoBehaviour
         if (_dodgeInputState == DodgeState.IsMovingToTarget || _dodgeInputState == DodgeState.IsMovingBack) return;
 
         _animator.SetTrigger("Hit");
-        _stats.ApplyDamage(damage);
+        _stats.DealDamage(damage);
     }
 
     private void MovePlayer()

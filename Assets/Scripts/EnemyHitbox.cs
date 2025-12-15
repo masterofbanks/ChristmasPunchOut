@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class EnemyHitbox : MonoBehaviour
 {
-    [SerializeField] private float damage = 10f;
+    private BaseEnemy enemyScript;
 
+    private void Awake()
+    {
+        enemyScript = GetComponentInParent<BaseEnemy>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PlayerHurtbox player))
         {
-            player.ApplyAHit(damage);
+            player.ApplyAHit(enemyScript.CurrentAttack.Damage);
         }
     }
 }
