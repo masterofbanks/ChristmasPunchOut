@@ -33,6 +33,12 @@ public class AudioManager : MonoBehaviour
     [Header("Sound Effects")]
     [SerializeField] private List<Sound> soundEffects = new List<Sound>();
 
+    [Header("Random Playlist Settings")]
+    [SerializeField] private bool enableRandomPlaylist = false;
+    [SerializeField] private bool shufflePlaylist = true;
+    [Tooltip("Prevent the same track from playing twice in a row")]
+    [SerializeField] private bool preventRepeat = true;
+
     [Header("Volume Settings")]
     [Range(0f, 1f)]
     public float masterVolume = 1f;
@@ -49,8 +55,14 @@ public class AudioManager : MonoBehaviour
 
     private string currentMusicTrack = "";
     private Coroutine musicFadeCoroutine;
+    private Coroutine playlistCoroutine;
     private Dictionary<string, Sound> musicDictionary = new Dictionary<string, Sound>();
     private Dictionary<string, Sound> sfxDictionary = new Dictionary<string, Sound>();
+
+    // Playlist management
+    private List<Sound> playlistQueue = new List<Sound>();
+    private int currentPlaylistIndex = 0;
+    private Sound lastPlayedTrack = null;
 
     private void Awake()
     {
@@ -75,7 +87,7 @@ public class AudioManager : MonoBehaviour
             GameObject musicObj = new GameObject("MusicSource");
             musicObj.transform.SetParent(transform);
             musicSource = musicObj.AddComponent<AudioSource>();
-            musicSource.loop = true;
+            musicSource.loop = false; // Changed to false for playlist support
             musicSource.playOnAwake = false;
         }
 
@@ -123,6 +135,9 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        // Stop playlist mode if active
+        StopRandomPlaylist();
+
         if (currentMusicTrack == name && musicSource.isPlaying)
         {
             if (showDebugInfo) Debug.Log($"Music '{name}' is already playing");
@@ -158,6 +173,8 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic(bool fade = true)
     {
+        StopRandomPlaylist();
+
         if (fade)
         {
             if (musicFadeCoroutine != null)
@@ -181,6 +198,122 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.UnPause();
         if (showDebugInfo) Debug.Log("Music resumed");
+    }
+
+    #endregion
+
+    #region Random Playlist Methods
+
+    public void StartRandomPlaylist()
+    {
+        if (musicTracks.Count == 0)
+        {
+            Debug.LogWarning("No music tracks available for playlist!");
+            return;
+        }
+
+        enableRandomPlaylist = true;
+        BuildPlaylistQueue();
+
+        if (playlistCoroutine != null)
+            StopCoroutine(playlistCoroutine);
+
+        playlistCoroutine = StartCoroutine(PlaylistCoroutine());
+
+        if (showDebugInfo) Debug.Log("Random playlist started");
+    }
+
+    public void StopRandomPlaylist()
+    {
+        enableRandomPlaylist = false;
+
+        if (playlistCoroutine != null)
+        {
+            StopCoroutine(playlistCoroutine);
+            playlistCoroutine = null;
+        }
+    }
+
+    public void PlayNextTrackInPlaylist()
+    {
+        if (!enableRandomPlaylist || playlistQueue.Count == 0)
+            return;
+
+        currentPlaylistIndex++;
+
+        // Rebuild queue if we've reached the end
+        if (currentPlaylistIndex >= playlistQueue.Count)
+        {
+            BuildPlaylistQueue();
+            currentPlaylistIndex = 0;
+        }
+
+        Sound nextTrack = playlistQueue[currentPlaylistIndex];
+        PlayMusicImmediate(nextTrack);
+        lastPlayedTrack = nextTrack;
+        currentMusicTrack = nextTrack.name;
+    }
+
+    private void BuildPlaylistQueue()
+    {
+        playlistQueue.Clear();
+        playlistQueue.AddRange(musicTracks);
+
+        if (shufflePlaylist)
+        {
+            ShufflePlaylist();
+        }
+
+        // Prevent same track from playing twice in a row
+        if (preventRepeat && lastPlayedTrack != null && playlistQueue.Count > 1)
+        {
+            if (playlistQueue[0].name == lastPlayedTrack.name)
+            {
+                // Swap first track with a random other track
+                int randomIndex = Random.Range(1, playlistQueue.Count);
+                Sound temp = playlistQueue[0];
+                playlistQueue[0] = playlistQueue[randomIndex];
+                playlistQueue[randomIndex] = temp;
+            }
+        }
+
+        currentPlaylistIndex = -1; // Will be incremented to 0 on first play
+
+        if (showDebugInfo)
+        {
+            Debug.Log($"Playlist queue built with {playlistQueue.Count} tracks");
+        }
+    }
+
+    private void ShufflePlaylist()
+    {
+        // Fisher-Yates shuffle
+        for (int i = playlistQueue.Count - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            Sound temp = playlistQueue[i];
+            playlistQueue[i] = playlistQueue[randomIndex];
+            playlistQueue[randomIndex] = temp;
+        }
+    }
+
+    private IEnumerator PlaylistCoroutine()
+    {
+        while (enableRandomPlaylist)
+        {
+            // Play next track
+            PlayNextTrackInPlaylist();
+
+            // Wait for track to finish
+            if (musicSource.clip != null)
+            {
+                yield return new WaitForSeconds(musicSource.clip.length);
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f); // Fallback
+            }
+        }
     }
 
     #endregion
@@ -323,6 +456,11 @@ public class AudioManager : MonoBehaviour
     public string GetCurrentMusicTrack()
     {
         return currentMusicTrack;
+    }
+
+    public bool IsPlaylistActive()
+    {
+        return enableRandomPlaylist;
     }
 
     #endregion

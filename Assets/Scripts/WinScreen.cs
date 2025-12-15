@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class MainMenuAudio : MonoBehaviour
+public class WinScreen : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        AudioManager.Instance.StartRandomPlaylist();
+        
     }
 
     // Update is called once per frame
