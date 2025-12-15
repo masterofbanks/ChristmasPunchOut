@@ -14,9 +14,13 @@ public class PlayerController : MonoBehaviour
 
     [Space]
     [Space]
-    [Header("------------------- DODGE SETTINGS -------------------")]
+    [Header("------------------- STATE -------------------")]
     [Header("Needs to be Set In Inspector")]
     [SerializeField] private CharacterStats _stats;
+
+    [Header("Exposed In Inspector For Debugging")]
+    [SerializeField] private bool _dead;
+    
 
     [Space]
     [Space]
@@ -59,6 +63,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if(_stats.Health < .01 && !_dead)
+        {
+            _dead = true;
+            _animator.SetBool("Dead", true);
+            _animator.SetTrigger("Death");
+        }
+
         MovePlayer();
 
         if(_dodgeInputState == DodgeState.IsMovingToTarget)
@@ -112,6 +123,11 @@ public class PlayerController : MonoBehaviour
         _attackHitbox.gameObject.SetActive(true);
     }
 
+    public void ClearAllBlocks()
+    {
+        _dodgeInputState = DodgeState.CanDodge;
+    }
+
     public void ResetDodge()
     {
         _dodgeInputState = DodgeState.CanDodge;
@@ -121,6 +137,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_dodgeInputState == DodgeState.IsMovingToTarget || _dodgeInputState == DodgeState.IsMovingBack) return;
 
+        _animator.SetTrigger("Hit");
         _stats.ApplyDamage(damage);
     }
 
