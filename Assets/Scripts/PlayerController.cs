@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         playerCamera = Camera.main;
         rb = GetComponent<Rigidbody2D>();
+        _stats = GetComponent<CharacterStats>();
     }
 
     private void Update()

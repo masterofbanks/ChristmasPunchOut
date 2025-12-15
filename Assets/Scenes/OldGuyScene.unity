@@ -1629,6 +1629,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f5086840f390349bc160e885449a10, type: 3}
+--- !u!1 &767317048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323783449772029084, guid: 98f5086840f390349bc160e885449a10, type: 3}
+  m_PrefabInstance: {fileID: 767317047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &767372867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,11 +2800,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e89842c3e94b514f874e5c47caf2bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 0}
-  CurrentGlobalPlayerStats: {fileID: 0}
-  PlayerSpawnPos: {fileID: 0}
+  PlayerPrefab: {fileID: 4467799197482581892, guid: 3156fec29b855fc489e64e66d63fa99c, type: 3}
+  CurrentGlobalPlayerStats: {fileID: 161406549}
+  PlayerSpawnPos: {fileID: 1780761173}
   Enemy: {fileID: 1634246606}
-  playerHealthBar: {fileID: 0}
+  playerHealthBar: {fileID: 767317048}
 --- !u!114 &1176800125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3225,7 +3230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5543378979902449041, guid: c283e4961f0c2734088d7df8583a79ff, type: 3}
       propertyPath: StoppingDistance
-      value: 1.33
+      value: 1.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3767,6 +3772,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ece11f8d7ba1b045973bc43d25bd916, type: 3}
+--- !u!4 &1780761173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1726972271721234474, guid: 8ece11f8d7ba1b045973bc43d25bd916, type: 3}
+  m_PrefabInstance: {fileID: 1780761172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1782778666
 GameObject:
   m_ObjectHideFlags: 0
