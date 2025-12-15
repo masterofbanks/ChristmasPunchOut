@@ -2,15 +2,30 @@ using UnityEngine;
 
 public class MainMenuAudio : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Debug")]
+    [SerializeField] private bool showDebugInfo = true;
+
     void Start()
     {
-        AudioManager.Instance.StartRandomPlaylist();
-    }
+        if (AudioManager.Instance == null)
+        {
+            Debug.LogError("[MainMenuAudio] AudioManager.Instance is NULL! Make sure AudioManager exists in the scene.");
+            return;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (showDebugInfo)
+        {
+            Debug.Log("[MainMenuAudio] AudioManager found, starting playlist...");
+        }
+
+        AudioManager.Instance.StartRandomPlaylist();
+
+        // Verify after starting
+        if (showDebugInfo)
+        {
+            Debug.Log($"[MainMenuAudio] Playlist active: {AudioManager.Instance.IsPlaylistActive()}");
+            Debug.Log($"[MainMenuAudio] Music playing: {AudioManager.Instance.IsMusicPlaying()}");
+            Debug.Log($"[MainMenuAudio] Current track: {AudioManager.Instance.GetCurrentMusicTrack()}");
+        }
     }
 }
