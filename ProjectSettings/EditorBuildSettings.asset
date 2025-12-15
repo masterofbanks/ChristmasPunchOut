@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Scenes/Main Menu.unity
     guid: 3446b274184441842905170a23e2f0ae
   - enabled: 1
-    path: Assets/Scenes/TarikScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Scenes/OldGuyScene.unity
     guid: 60fbc4b25e7828c4bb2a5d9163974009
   - enabled: 1
     path: Assets/Scenes/WinCondition.unity
     guid: 897ea104791db0d43aebded9e6ef0727
+  - enabled: 1
+    path: Assets/Scenes/YoungGuyScene.unity
+    guid: c30894a8a2c171e4591fbaa1b8a1f3b9
+  - enabled: 1
+    path: Assets/Scenes/StrongGuyScene.unity
+    guid: 876c7b5d8ef7a874db0f4461e643b211
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
