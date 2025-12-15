@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
@@ -5,6 +6,7 @@ public class CharacterStats : MonoBehaviour
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private float _currentHealth = 100;
     public float MaxHealth { get { return _maxHealth; } }
+
     public float Health 
     { 
         get 
@@ -25,6 +27,7 @@ public class CharacterStats : MonoBehaviour
 
     public CharacterState cState;
 
+
     private void Awake()
     {
         cState = CharacterState.Alive;
@@ -43,5 +46,17 @@ public class CharacterStats : MonoBehaviour
     {
         return cState == CharacterState.Alive;
 
+    }
+
+    public void ChangeStats(CharacterStats newStats)
+    {
+        _maxHealth = newStats._maxHealth;
+        _currentHealth = _maxHealth;
+    }
+
+    public void ChangeStats(float multiplier)
+    {
+        _maxHealth *= multiplier;
+        _currentHealth = _maxHealth;
     }
 }
