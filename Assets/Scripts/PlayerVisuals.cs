@@ -10,4 +10,9 @@ public class PlayerVisuals : MonoBehaviour
     {
         player.ActivateAttackHitbox();
     }
+
+    public void ClearAllBlocks()
+    {
+        player.ClearAllBlocks();
+    }
 }
