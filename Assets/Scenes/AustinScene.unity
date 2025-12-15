@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5f4a464631cd6c547be1b7cdf26944e9, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -8632,6 +8632,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5bbae5b0bb7722f479a44d4650a9810e, type: 3}
       propertyPath: m_Name
       value: Clock Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439916707729196984, guid: 5bbae5b0bb7722f479a44d4650a9810e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560433821368879789, guid: 5bbae5b0bb7722f479a44d4650a9810e, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1560433821368879789, guid: 5bbae5b0bb7722f479a44d4650a9810e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
