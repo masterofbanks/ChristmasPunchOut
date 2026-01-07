@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 /// Camera controller that follows a target with orthographic view
 /// Supports orbital rotation around target with Q/E keys
 /// No position interpolation to maintain orthographic illusion
+/// ENHANCED: Better target finding for ActiveRagdoll
 /// </summary>
 public class CameraFollow : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class CameraFollow : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction rotateLeftAction;
     private InputAction rotateRightAction;
+    private float targetSearchTimer = 0f; // NEW
+    private const float targetSearchInterval = 0.5f; // NEW: Search every 0.5s instead of every frame
 
     void Awake()
     {
@@ -75,14 +78,19 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!isInitialized || target == null)
+        // NEW: If no target, try to find one periodically
+        if (target == null && autoFindPlayer)
         {
-            if (autoFindPlayer)
+            targetSearchTimer += Time.deltaTime;
+            if (targetSearchTimer >= targetSearchInterval)
             {
                 TryFindTarget();
+                targetSearchTimer = 0f;
             }
-            return;
+            return; // Don't update camera if no target
         }
+
+        if (!isInitialized) return;
 
         // Handle input for rotation (if not using new input system events)
         if (!useNewInputSystem)
@@ -97,7 +105,7 @@ public class CameraFollow : MonoBehaviour
         }
         else
         {
-            currentOrbitAngle = targetOrbitAngle; // Snap when close
+            currentOrbitAngle = targetOrbitAngle;
         }
 
         // Update camera position - NO INTERPOLATION for position
@@ -106,7 +114,7 @@ public class CameraFollow : MonoBehaviour
         // Update camera rotation to look at target
         UpdateCameraRotation();
 
-        if (showDebugInfo)
+        if (showDebugInfo && Time.frameCount % 60 == 0) // Log once per second
         {
             LogDebugInfo();
         }
@@ -127,7 +135,7 @@ public class CameraFollow : MonoBehaviour
 
             if (showDebugInfo)
             {
-                Debug.Log("[CameraFollow] Initialized with target: " + target.name);
+                Debug.Log("[CameraFollow] ✓ Initialized with target: " + target.name);
             }
         }
     }
@@ -159,25 +167,20 @@ public class CameraFollow : MonoBehaviour
                     rotateLeftAction.performed += OnRotateLeft;
                     if (showDebugInfo) Debug.Log("[CameraFollow] ✓ Bound RotateCameraLeft action");
                 }
-                else
-                {
-                    Debug.LogWarning("[CameraFollow] ⚠ 'RotateCameraLeft' action not found! Add it to your Input Actions.");
-                }
 
                 if (rotateRightAction != null)
                 {
                     rotateRightAction.performed += OnRotateRight;
                     if (showDebugInfo) Debug.Log("[CameraFollow] ✓ Bound RotateCameraRight action");
                 }
-                else
-                {
-                    Debug.LogWarning("[CameraFollow] ⚠ 'RotateCameraRight' action not found! Add it to your Input Actions.");
-                }
             }
             else
             {
-                Debug.LogWarning("[CameraFollow] ⚠ PlayerInput not found! Falling back to legacy input (Q/E will still work).");
-                useNewInputSystem = false; // Fallback to legacy
+                if (showDebugInfo)
+                {
+                    Debug.LogWarning("[CameraFollow] PlayerInput not found - using legacy input");
+                }
+                useNewInputSystem = false;
             }
         }
     }
@@ -198,13 +201,13 @@ public class CameraFollow : MonoBehaviour
     private void OnRotateLeft(InputAction.CallbackContext context)
     {
         RotateCamera(-rotationAngle);
-        if (showDebugInfo) Debug.Log("[CameraFollow] ◀ Rotate LEFT triggered");
+        if (showDebugInfo) Debug.Log("[CameraFollow] ◀ Rotate LEFT");
     }
 
     private void OnRotateRight(InputAction.CallbackContext context)
     {
         RotateCamera(rotationAngle);
-        if (showDebugInfo) Debug.Log("[CameraFollow] ▶ Rotate RIGHT triggered");
+        if (showDebugInfo) Debug.Log("[CameraFollow] ▶ Rotate RIGHT");
     }
 
     private void HandleLegacyInput()
@@ -214,35 +217,35 @@ public class CameraFollow : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             RotateCamera(-rotationAngle);
-            if (showDebugInfo) Debug.Log("[CameraFollow] Q pressed - Rotate LEFT");
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             RotateCamera(rotationAngle);
-            if (showDebugInfo) Debug.Log("[CameraFollow] E pressed - Rotate RIGHT");
         }
     }
 
-    /// <summary>
-    /// Rotates the camera around the target by the specified angle
-    /// </summary>
     public void RotateCamera(float angleDelta)
     {
         targetOrbitAngle += angleDelta;
 
-        // Normalize angle to 0-360 range
         while (targetOrbitAngle >= 360f) targetOrbitAngle -= 360f;
         while (targetOrbitAngle < 0f) targetOrbitAngle += 360f;
-
-        if (showDebugInfo)
-        {
-            Debug.Log($"[CameraFollow] 🔄 Rotating by {angleDelta}° → Target angle: {targetOrbitAngle}°");
-        }
     }
 
     private void TryFindTarget()
     {
         GameObject player = GameObject.FindGameObjectWithTag(playerTag);
+
+        // NEW: Also try to find ActiveRagdollCharacter
+        if (player == null)
+        {
+            var activeRagdoll = FindObjectOfType<ActiveRagdollCharacter>();
+            if (activeRagdoll != null)
+            {
+                player = activeRagdoll.gameObject;
+                Debug.Log("[CameraFollow] Found ActiveRagdollCharacter: " + player.name);
+            }
+        }
 
         if (player == null)
         {
@@ -250,6 +253,7 @@ public class CameraFollow : MonoBehaviour
             if (skeletonChar != null)
             {
                 player = skeletonChar.gameObject;
+                Debug.Log("[CameraFollow] Found CubeSkeletonCharacter: " + player.name);
             }
         }
 
@@ -261,7 +265,7 @@ public class CameraFollow : MonoBehaviour
 
     private void UpdateCameraPosition()
     {
-        // NO INTERPOLATION - Direct follow for orthographic illusion
+        // Direct follow - no interpolation
         transform.position = GetTargetPosition();
     }
 
@@ -272,7 +276,6 @@ public class CameraFollow : MonoBehaviour
         Vector3 lookTarget = target.position + lookAtOffset;
         Quaternion targetRotation = Quaternion.LookRotation(lookTarget - transform.position);
 
-        // Smooth rotation for camera angle changes
         transform.rotation = Quaternion.Slerp(
             transform.rotation,
             targetRotation,
@@ -286,7 +289,6 @@ public class CameraFollow : MonoBehaviour
 
         if (useOrthographic && enableOrbitalRotation)
         {
-            // Calculate orbital position around target
             float angleRad = currentOrbitAngle * Mathf.Deg2Rad;
 
             Vector3 orbitOffset = new Vector3(
@@ -299,46 +301,34 @@ public class CameraFollow : MonoBehaviour
         }
         else
         {
-            // Fallback: fixed offset
             return target.position + new Vector3(0, orbitHeight, -orbitDistance);
         }
     }
 
-    /// <summary>
-    /// Sets the target for the camera to follow
-    /// </summary>
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
 
         if (target != null)
         {
-            if (showDebugInfo)
-            {
-                Debug.Log($"[CameraFollow] ✓ Target set to: {target.name}");
-            }
+            Debug.Log($"[CameraFollow] ✓ Target set to: {target.name}");
 
             isInitialized = true;
 
-            // Try to setup input if we have a new target
             if (useNewInputSystem)
             {
                 CleanupInput();
                 SetupInput();
             }
 
-            // Snap to target position immediately
+            // Snap to target immediately
             transform.position = GetTargetPosition();
 
-            // Set rotation immediately
             Vector3 lookTarget = target.position + lookAtOffset;
             transform.rotation = Quaternion.LookRotation(lookTarget - transform.position);
         }
     }
 
-    /// <summary>
-    /// Immediately snaps camera to target position (no smoothing)
-    /// </summary>
     public void SnapToTarget()
     {
         if (target != null)
@@ -350,18 +340,12 @@ public class CameraFollow : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Sets the camera orbit angle directly (0-360 degrees)
-    /// </summary>
     public void SetOrbitAngle(float angle)
     {
         targetOrbitAngle = angle;
         currentOrbitAngle = angle;
     }
 
-    /// <summary>
-    /// Gets the current orbit angle
-    /// </summary>
     public float GetOrbitAngle()
     {
         return currentOrbitAngle;
@@ -374,23 +358,25 @@ public class CameraFollow : MonoBehaviour
 
     private void LogDebugInfo()
     {
-        if (target == null) return;
+        if (target == null)
+        {
+            Debug.Log("[CameraFollow] No target assigned");
+            return;
+        }
 
         float distance = Vector3.Distance(transform.position, target.position);
-        Debug.Log($"[CameraFollow] Angle: {currentOrbitAngle:F1}° (Target: {targetOrbitAngle:F1}°), Distance: {distance:F2}");
+        Debug.Log($"[CameraFollow] Target: {target.name}, Angle: {currentOrbitAngle:F1}°, Distance: {distance:F2}");
     }
 
     void OnDrawGizmos()
     {
         if (!showGizmos || target == null) return;
 
-        // Draw orbit path
         if (enableOrbitalRotation && useOrthographic)
         {
             Gizmos.color = Color.cyan;
             DrawWireCircle(target.position + Vector3.up * orbitHeight, orbitDistance, Vector3.up);
 
-            // Draw current camera angle indicator
             float angleRad = currentOrbitAngle * Mathf.Deg2Rad;
             Vector3 anglePos = target.position + new Vector3(
                 Mathf.Sin(angleRad) * orbitDistance,
@@ -402,7 +388,6 @@ public class CameraFollow : MonoBehaviour
             Gizmos.DrawLine(target.position + Vector3.up * orbitHeight, anglePos);
             Gizmos.DrawWireSphere(anglePos, 0.5f);
 
-            // Draw target angle indicator (where camera is moving to)
             if (Mathf.Abs(targetOrbitAngle - currentOrbitAngle) > 1f)
             {
                 float targetAngleRad = targetOrbitAngle * Mathf.Deg2Rad;
@@ -415,18 +400,8 @@ public class CameraFollow : MonoBehaviour
                 Gizmos.color = Color.green;
                 Gizmos.DrawWireSphere(targetAnglePos, 0.3f);
             }
-
-            // Draw cardinal directions
-            Gizmos.color = Color.red;
-            Vector3 north = target.position + Vector3.forward * orbitDistance * 0.5f + Vector3.up * orbitHeight;
-            Gizmos.DrawLine(target.position + Vector3.up * orbitHeight, north);
-
-            Gizmos.color = Color.blue;
-            Vector3 east = target.position + Vector3.right * orbitDistance * 0.5f + Vector3.up * orbitHeight;
-            Gizmos.DrawLine(target.position + Vector3.up * orbitHeight, east);
         }
 
-        // Draw look-at line
         Gizmos.color = Color.magenta;
         Gizmos.DrawLine(transform.position, target.position + lookAtOffset);
     }
