@@ -21,5 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StrongGuyScene.unity
     guid: 876c7b5d8ef7a874db0f4461e643b211
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 1f7cad95cf68fde4ca91add3d87c8592, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -31,8 +31,8 @@ MonoBehaviour:
   m_Active: 1
   settings:
     renderPassEvent: 550
-    targetWidth: 256
-    targetHeight: 256
+    targetWidth: 480
+    targetHeight: 480
     onlyApplyToBaseCamera: 1
 --- !u!114 &11400000
 MonoBehaviour:
