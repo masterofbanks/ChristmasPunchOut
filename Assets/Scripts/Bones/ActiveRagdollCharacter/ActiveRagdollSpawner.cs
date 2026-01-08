@@ -3,8 +3,7 @@ using UnityEngine.InputSystem;
 
 /// <summary>
 /// Spawns physics-based active ragdoll character
-/// Uses the SAME input actions as CubeSkeletonCharacter
-/// FIXED: Root GameObject follows hips so camera can track properly
+/// FIXED: Don't override balancer's foot targets - let it calibrate naturally
 /// </summary>
 public class ActiveRagdollSpawner : MonoBehaviour
 {
@@ -19,18 +18,18 @@ public class ActiveRagdollSpawner : MonoBehaviour
 
     [Header("Physics Settings")]
     [SerializeField] private float boneMass = 1f;
-    [SerializeField] private float jointSpring = 5000f;
-    [SerializeField] private float jointDamper = 500f;
+    [SerializeField] private float jointSpring = 3000f; // REDUCED from 5000 - less springy
+    [SerializeField] private float jointDamper = 1000f; // INCREASED from 500 - more damping
 
-    [Header("Balance Settings")]
-    [SerializeField] private float balanceStrength = 50f;
-    [SerializeField] private float hipHeightTarget = 1.5f;
+    [Header("Animation Settings")]
+    [SerializeField] private bool enableProceduralAnimation = false;
+    [SerializeField] private float animationInfluence = 0.5f;
 
     [Header("Ground Detection")]
     [SerializeField] private float groundRaycastHeight = 10f;
     [SerializeField] private float footSpacing = 0.5f;
     [SerializeField] private LayerMask groundLayer = ~0;
-    [SerializeField] private float footHeightOffset = 0.05f;
+    [SerializeField] private float characterHeight = 8f;
 
     [Header("Camera Setup")]
     [SerializeField] private bool setupCameraFollow = true;
@@ -46,15 +45,12 @@ public class ActiveRagdollSpawner : MonoBehaviour
     [SerializeField] private bool showGroundDetectionGizmos = true;
 
     private Vector3 detectedGroundPosition;
-    private Vector3 leftFootGroundPos;
-    private Vector3 rightFootGroundPos;
 
     private void Start()
     {
         if (inputActions == null)
         {
             Debug.LogError("❌ ActiveRagdollSpawner: No Input Actions assigned!");
-            Debug.LogError("   Assign the SAME InputActionAsset used by CubePlayerSpawner");
             return;
         }
 
@@ -75,51 +71,45 @@ public class ActiveRagdollSpawner : MonoBehaviour
         if (showDebugLogs) Debug.Log("=== SPAWNING ACTIVE RAGDOLL CHARACTER ===");
 
         Vector3 spawnPosition = transform.position + spawnOffset;
-        DetectGroundAndFootPositions(spawnPosition);
+        DetectGroundPosition(spawnPosition);
 
-        GameObject characterRoot = new GameObject("ActiveRagdollCharacter");
-        characterRoot.transform.position = detectedGroundPosition;
-        characterRoot.transform.rotation = transform.rotation;
-        characterRoot.tag = "Player";
+        // Calculate root position so feet touch ground
+        float feetToHipsDistance = characterHeight * 0.5f;
+        Vector3 targetRootPosition = detectedGroundPosition + Vector3.up * feetToHipsDistance;
 
         if (showDebugLogs)
         {
-            Debug.Log($"Spawner position: {transform.position}");
-            Debug.Log($"Ground detected at: {detectedGroundPosition}");
+            Debug.Log($"Ground level: {detectedGroundPosition.y:F2}");
+            Debug.Log($"Root positioned at: {targetRootPosition}");
         }
 
-        // Build character FIRST
+        // Build character
+        GameObject characterRoot = new GameObject("ActiveRagdollCharacter");
+        characterRoot.transform.position = targetRootPosition;
+        characterRoot.transform.rotation = transform.rotation;
+        characterRoot.tag = "Player";
+
         ActiveRagdollCharacter character = characterRoot.AddComponent<ActiveRagdollCharacter>();
         character.BuildCharacter();
 
-        // NEW: Add RootFollower to make root follow hips
-        RootFollower rootFollower = characterRoot.AddComponent<RootFollower>();
-        // It will auto-find hips, but we can also set it explicitly:
-        if (character.hips != null)
+        // Verify positions
+        if (showDebugLogs && character.leftFoot != null)
         {
-            rootFollower.SetTarget(character.hips.transform);
-            if (showDebugLogs)
-            {
-                Debug.Log("✓ RootFollower added - root will follow hips");
-            }
+            Debug.Log($"After build:");
+            Debug.Log($"  Hips at Y={character.hips.transform.position.y:F2}");
+            Debug.Log($"  Left foot at Y={character.leftFoot.transform.position.y:F2}");
+            Debug.Log($"  Ground at Y={detectedGroundPosition.y:F2}");
+            float footOffset = character.leftFoot.transform.position.y - detectedGroundPosition.y;
+            Debug.Log($"  Foot offset from ground: {footOffset:F2}m");
         }
 
-        // Setup input system BEFORE movement component
         SetupInputSystem(characterRoot);
-
-        // Setup camera to follow root (which now follows hips!)
-        if (setupCameraFollow)
-        {
-            SetupCamera(characterRoot.transform);
-        }
-
-        // Initialize physics (this adds ActiveRagdollBalancer and ActiveRagdollMovement)
         StartCoroutine(InitializeCharacterPhysics(character));
 
         return character;
     }
 
-    private void SetupCamera(Transform playerTransform)
+    private void SetupCamera(Transform hipsTransform)
     {
         Camera mainCamera = Camera.main;
 
@@ -129,48 +119,21 @@ public class ActiveRagdollSpawner : MonoBehaviour
             mainCamera = cameraObj.AddComponent<Camera>();
             cameraObj.tag = "MainCamera";
             cameraObj.AddComponent<AudioListener>();
-
-            if (showDebugLogs)
-            {
-                Debug.Log("✓ Created new camera");
-            }
         }
 
         if (mainCamera != null)
         {
             CameraFollow cameraFollow = mainCamera.GetComponent<CameraFollow>();
-
             if (cameraFollow == null)
             {
                 cameraFollow = mainCamera.gameObject.AddComponent<CameraFollow>();
-                if (showDebugLogs)
-                {
-                    Debug.Log("✓ Added CameraFollow component");
-                }
             }
-
-            // Camera follows root (which follows hips via RootFollower)
-            cameraFollow.SetTarget(playerTransform);
-
-            if (showDebugLogs)
-            {
-                Debug.Log("✓ Camera setup complete - following root (which follows hips)");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("⚠ No main camera found!");
+            cameraFollow.SetTarget(hipsTransform);
         }
     }
 
     private void SetupInputSystem(GameObject characterRoot)
     {
-        if (showDebugLogs)
-        {
-            Debug.Log("=== SETTING UP INPUT SYSTEM ===");
-            Debug.Log($"Input Actions Asset: {inputActions.name}");
-        }
-
         PlayerInput playerInput = characterRoot.AddComponent<PlayerInput>();
         playerInput.actions = inputActions;
         playerInput.notificationBehavior = PlayerNotifications.InvokeCSharpEvents;
@@ -185,68 +148,60 @@ public class ActiveRagdollSpawner : MonoBehaviour
         if (playerActionMap != null)
         {
             playerActionMap.Enable();
-
-            var moveAction = playerActionMap.FindAction("Move");
-            if (moveAction != null)
-            {
-                if (showDebugLogs)
-                {
-                    Debug.Log($"✓ Found 'Move' action");
-                    Debug.Log($"  Move action enabled: {moveAction.enabled}");
-                    Debug.Log($"  Move action bindings: {moveAction.bindings.Count}");
-                }
-            }
-            else
-            {
-                Debug.LogError("❌ 'Move' action not found in 'Player' action map!");
-            }
-
-            if (showDebugLogs)
-            {
-                Debug.Log("✓ Input action map 'Player' enabled");
-            }
-        }
-        else
-        {
-            Debug.LogError("❌ 'Player' action map not found in InputActionAsset!");
         }
 
         playerInput.ActivateInput();
 
         if (showDebugLogs)
         {
-            Debug.Log($"✓ PlayerInput activated");
-            Debug.Log($"  Current action map: {playerInput.currentActionMap?.name ?? "NULL"}");
+            Debug.Log($"✓ Input system configured");
         }
     }
 
     private System.Collections.IEnumerator InitializeCharacterPhysics(ActiveRagdollCharacter character)
     {
+        // Wait for physics to settle
         yield return new WaitForFixedUpdate();
         yield return new WaitForFixedUpdate();
 
-        PositionCharacterAboveGround(character);
+        GameObject hipsObject = character.hips.gameObject;
 
-        ActiveRagdollBalancer balancer = character.gameObject.AddComponent<ActiveRagdollBalancer>();
+        // Add balancer - it will calibrate foot targets itself!
+        ActiveRagdollBalancer balancer = hipsObject.AddComponent<ActiveRagdollBalancer>();
+
+        // REMOVED: Don't set foot targets here! Let the balancer find ground itself
+        // This was causing conflicts where spawner set targets, then balancer recalculated them
 
         yield return new WaitForFixedUpdate();
 
-        Vector3 leftFootTargetWithOffset = leftFootGroundPos + Vector3.up * footHeightOffset;
-        Vector3 rightFootTargetWithOffset = rightFootGroundPos + Vector3.up * footHeightOffset;
+        // Add movement
+        ActiveRagdollMovement movement = hipsObject.AddComponent<ActiveRagdollMovement>();
 
-        balancer.UpdateFootTarget(true, leftFootTargetWithOffset);
-        balancer.UpdateFootTarget(false, rightFootTargetWithOffset);
+        // Add procedural animation
+        if (enableProceduralAnimation)
+        {
+            ProceduralLegAnimator animator = hipsObject.AddComponent<ProceduralLegAnimator>();
+            animator.SetAnimationInfluence(animationInfluence);
 
-        ActiveRagdollMovement movement = character.gameObject.AddComponent<ActiveRagdollMovement>();
+            if (showDebugLogs)
+            {
+                Debug.Log("✓ Procedural leg animator added");
+            }
+        }
+
+        // Setup camera
+        if (setupCameraFollow)
+        {
+            SetupCamera(character.hips.transform);
+        }
 
         if (showDebugLogs)
         {
-            Debug.Log("✓ Character physics initialized");
-            Debug.Log("=== ✓ ACTIVE RAGDOLL SPAWNED SUCCESSFULLY ===");
+            Debug.Log("=== ✓ ACTIVE RAGDOLL SPAWNED - Balancer will calibrate to ground ===");
         }
     }
 
-    private void DetectGroundAndFootPositions(Vector3 spawnPosition)
+    private void DetectGroundPosition(Vector3 spawnPosition)
     {
         Vector3 rayStart = spawnPosition + Vector3.up * groundRaycastHeight;
 
@@ -256,55 +211,13 @@ public class ActiveRagdollSpawner : MonoBehaviour
 
             if (showDebugLogs)
             {
-                Debug.Log($"Ground hit at {centerHit.point}");
+                Debug.Log($"✓ Ground detected at Y={detectedGroundPosition.y:F2}");
             }
         }
         else
         {
             detectedGroundPosition = spawnPosition;
-            Debug.LogWarning($"No ground detected beneath spawn position!");
-        }
-
-        Vector3 leftFootOffset = transform.right * -footSpacing;
-        Vector3 leftRayStart = detectedGroundPosition + leftFootOffset + Vector3.up * 2f;
-
-        if (Physics.Raycast(leftRayStart, Vector3.down, out RaycastHit leftHit, 5f, groundLayer))
-        {
-            leftFootGroundPos = leftHit.point;
-        }
-        else
-        {
-            leftFootGroundPos = detectedGroundPosition + leftFootOffset;
-        }
-
-        Vector3 rightFootOffset = transform.right * footSpacing;
-        Vector3 rightRayStart = detectedGroundPosition + rightFootOffset + Vector3.up * 2f;
-
-        if (Physics.Raycast(rightRayStart, Vector3.down, out RaycastHit rightHit, 5f, groundLayer))
-        {
-            rightFootGroundPos = rightHit.point;
-        }
-        else
-        {
-            rightFootGroundPos = detectedGroundPosition + rightFootOffset;
-        }
-    }
-
-    private void PositionCharacterAboveGround(ActiveRagdollCharacter character)
-    {
-        if (character == null || character.hips == null) return;
-
-        float avgFootHeight = (leftFootGroundPos.y + rightFootGroundPos.y) / 2f;
-        float leftFootCurrentY = character.leftFoot.transform.position.y;
-        float rightFootCurrentY = character.rightFoot.transform.position.y;
-        float avgCurrentFootY = (leftFootCurrentY + rightFootCurrentY) / 2f;
-
-        float footHeightOffsetCalc = avgFootHeight - avgCurrentFootY + this.footHeightOffset;
-        character.transform.position += Vector3.up * footHeightOffsetCalc;
-
-        if (showDebugLogs)
-        {
-            Debug.Log($"Character lifted by {footHeightOffsetCalc:F2} units");
+            Debug.LogWarning($"⚠ No ground detected! Using spawn position");
         }
     }
 
@@ -312,29 +225,23 @@ public class ActiveRagdollSpawner : MonoBehaviour
     {
         if (!showGroundDetectionGizmos) return;
 
+        // Draw spawner position
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, 0.3f);
 
-        Gizmos.color = Color.blue;
-        Vector3 spawnPos = transform.position + spawnOffset;
-        Gizmos.DrawWireSphere(spawnPos, 0.2f);
-        Gizmos.DrawLine(transform.position, spawnPos);
-
-        Vector3 rayStart = spawnPos + Vector3.up * groundRaycastHeight;
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(rayStart, rayStart + Vector3.down * groundRaycastHeight * 2f);
-
         if (Application.isPlaying)
         {
+            // Draw detected ground
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(detectedGroundPosition, 0.4f);
 
-            Gizmos.color = Color.red;
-            Vector3 leftTarget = leftFootGroundPos + Vector3.up * footHeightOffset;
-            Vector3 rightTarget = rightFootGroundPos + Vector3.up * footHeightOffset;
+            // Draw expected root position
+            float feetToHipsDistance = characterHeight * 0.5f;
+            Vector3 expectedRootPos = detectedGroundPosition + Vector3.up * feetToHipsDistance;
 
-            Gizmos.DrawWireSphere(leftTarget, 0.15f);
-            Gizmos.DrawWireSphere(rightTarget, 0.15f);
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireCube(expectedRootPos, Vector3.one * 0.3f);
+            Gizmos.DrawLine(detectedGroundPosition, expectedRootPos);
         }
     }
 }

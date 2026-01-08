@@ -2,45 +2,61 @@
 
 /// <summary>
 /// Active balance controller for ragdoll character
-/// Uses physics forces to maintain upright posture
-/// Dynamically updates foot targets when character is moved
+/// IMPROVED: Reduced force magnitudes, better smoothing, animator coordination, optimized raycasts
 /// </summary>
 public class ActiveRagdollBalancer : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private ActiveRagdollCharacter character;
+    [SerializeField] private ProceduralLegAnimator animator; // NEW: Reference for coordination
 
     [Header("Balance Settings")]
-    [SerializeField] private float balanceStrength = 500f; // INCREASED from 50
-    [SerializeField] private float balanceDamping = 100f; // INCREASED from 20
-    [SerializeField] private float hipHeightTarget = 3.0f;
-    [SerializeField] private float hipHeightForce = 500f; // INCREASED from 100
+    [SerializeField] private float balanceStrength = 300f; // REDUCED from 500
+    [SerializeField] private float balanceDamping = 100f;
     [SerializeField] private float maxAngularVelocity = 10f;
 
+    [Header("Grounding")]
+    [SerializeField] private float groundingForce = 300f; // REDUCED from 500
+    [SerializeField] private float maxGroundDistance = 0.2f;
+    [SerializeField] private float targetHipsHeight = 2.5f;
+
     [Header("Feet Settings")]
-    [SerializeField] private float footPlantForce = 500f; // INCREASED from 100
-    [SerializeField] private float footDamping = 100f; // INCREASED from 50
-    [SerializeField] private float footLevelingTorque = 200f; // INCREASED from 50
+    [SerializeField] private float footPlantForce = 300f; // REDUCED from 1000
+    [SerializeField] private float footDamping = 200f; // INCREASED from 150
+    [SerializeField] private float footMaxForce = 500f; // NEW: Force clamp
+    [SerializeField] private float footLevelingTorque = 200f;
     [SerializeField] private float footSpacing = 0.5f;
     [SerializeField] private float footHeightOffset = 0.05f;
+    [SerializeField] private float footFriction = 10f;
 
     [Header("Ground Detection")]
     [SerializeField] private LayerMask groundLayer = ~0;
-    [SerializeField] private float groundRaycastDistance = 5f;
-    [SerializeField] private float footUpdateInterval = 0.2f;
+    [SerializeField] private float groundRaycastDistance = 10f;
+    [SerializeField] private float footUpdateInterval = 0.1f;
     [SerializeField] private bool autoUpdateFootTargets = true;
 
     [Header("Movement")]
     [SerializeField] private Vector3 targetVelocity;
-    [SerializeField] private float movementForce = 100f; // REDUCED from 200 to prevent tipping
+    [SerializeField] private float movementForce = 300f;
 
     [Header("Stabilization")]
     [SerializeField] private bool enableVelocityLimits = true;
     [SerializeField] private float maxVelocity = 10f;
     [SerializeField] private float initialStabilizationTime = 0.5f;
 
-    [Header("Debug Movement")]
-    [SerializeField] private bool logMovementForces = false; // Turn off spam
+    [Header("Smoothing - IMPROVED")]
+    [SerializeField] private float earlySmoothingFactor = 0.05f; // NEW: Aggressive smoothing for first 100 frames
+    [SerializeField] private float normalSmoothingFactor = 0.1f; // Standard smoothing after stabilization
+    [SerializeField] private float maxTargetJump = 0.2f;
+
+    [Header("Debug")]
+    [SerializeField] private bool logInitialization = false; // Disabled by default
+    [SerializeField] private bool logEveryFrame = false;
+    [SerializeField] private bool logGrounding = false;
+    [SerializeField] private bool logFootIK = false;
+    [SerializeField] private bool logForces = false;
+    [SerializeField] private bool logRaycast = false;
+    [SerializeField] private int logFrameInterval = 30;
 
     private Vector3 leftFootTarget;
     private Vector3 rightFootTarget;
@@ -49,36 +65,105 @@ public class ActiveRagdollBalancer : MonoBehaviour
     private bool isInitialized = false;
     private float footUpdateTimer = 0f;
     private Vector3 lastHipsPosition;
-    private float positionChangeThreshold = 0.5f;
     private float stabilizationTimer = 0f;
     private bool isStabilizing = true;
+    private float currentGroundLevel = 0f;
+
+    private int frameCount = 0;
+    private Collider[] characterColliders;
+
+    // Track jumping/jitter
+    private float lastHipsY = 0f;
+    private float maxVerticalVelocity = 0f;
+    private int jumpDetectionCount = 0;
+
+    // NEW: Raycast cache for optimization
+    private RaycastHit[] raycastHitCache = new RaycastHit[10];
 
     private void Start()
     {
         if (character == null)
-            character = GetComponent<ActiveRagdollCharacter>();
+        {
+            character = GetComponentInParent<ActiveRagdollCharacter>();
 
+            if (character == null)
+            {
+                Debug.LogError("[ActiveRagdollBalancer] ❌ ActiveRagdollCharacter not found!");
+                return;
+            }
+        }
+
+        // NEW: Auto-find animator if not assigned
+        if (animator == null)
+        {
+            animator = GetComponent<ProceduralLegAnimator>();
+        }
+
+        CacheCharacterColliders();
         InitializeRigidbodySettings();
-
-        if (character.leftFoot != null)
-            leftFootTarget = character.leftFoot.transform.position;
-
-        if (character.rightFoot != null)
-            rightFootTarget = character.rightFoot.transform.position;
+        InitializeFootTargets();
 
         if (character.hips != null)
+        {
             lastHipsPosition = character.hips.transform.position;
+            lastHipsY = character.hips.transform.position.y;
+        }
 
         isInitialized = true;
         stabilizationTimer = 0f;
         isStabilizing = true;
 
-        Debug.Log("[ActiveRagdollBalancer] Initialized - stabilization period starting");
+        Debug.Log("[ActiveRagdollBalancer] ✓ Initialized with improved force control");
+    }
+
+    private void CacheCharacterColliders()
+    {
+        characterColliders = character.GetComponentsInChildren<Collider>();
+
+        if (logInitialization)
+        {
+            Debug.Log($"[CacheCharacterColliders] Found {characterColliders.Length} colliders:");
+            foreach (Collider col in characterColliders)
+            {
+                Debug.Log($"  - {col.gameObject.name} ({col.GetType().Name})");
+            }
+        }
+    }
+
+    private void InitializeFootTargets()
+    {
+        if (character.hips == null)
+        {
+            Debug.LogError("[InitializeFootTargets] ❌ Hips is NULL!");
+            return;
+        }
+
+        Vector3 hipsPos = character.hips.transform.position;
+        Vector3 hipsRight = character.hips.transform.right;
+
+        Vector3 leftFootDesiredPos = hipsPos + hipsRight * -footSpacing;
+        Vector3 rightFootDesiredPos = hipsPos + hipsRight * footSpacing;
+
+        leftFootTarget = FindGroundBelowHips(leftFootDesiredPos, "LEFT INIT");
+        rightFootTarget = FindGroundBelowHips(rightFootDesiredPos, "RIGHT INIT");
+
+        currentGroundLevel = (leftFootTarget.y + rightFootTarget.y) / 2f;
+        targetHipsHeight = hipsPos.y - currentGroundLevel;
+
+        if (logInitialization)
+        {
+            Debug.Log($"========== INITIALIZATION COMPLETE ==========");
+            Debug.Log($"Ground level: Y={currentGroundLevel:F2}");
+            Debug.Log($"Target hips height: {targetHipsHeight:F2}m");
+            Debug.Log($"Left foot target: {leftFootTarget}");
+            Debug.Log($"Right foot target: {rightFootTarget}");
+            Debug.Log($"============================================");
+        }
     }
 
     private void InitializeRigidbodySettings()
     {
-        RagdollBone[] allBones = GetComponentsInChildren<RagdollBone>();
+        RagdollBone[] allBones = character.GetComponentsInChildren<RagdollBone>();
 
         foreach (RagdollBone bone in allBones)
         {
@@ -87,72 +172,186 @@ public class ActiveRagdollBalancer : MonoBehaviour
             {
                 rb.maxAngularVelocity = maxAngularVelocity;
                 rb.maxLinearVelocity = maxVelocity;
-                rb.linearDamping = 1f; // INCREASED from 0.5 for more stability
-                rb.angularDamping = 5f; // INCREASED from 2 to reduce spinning
-                rb.solverIterations = 20; // INCREASED from 10 for better joint stability
-                rb.solverVelocityIterations = 20; // INCREASED from 10
+                rb.linearDamping = 0.5f;
+                rb.angularDamping = 3f;
+                rb.solverIterations = 20;
+                rb.solverVelocityIterations = 20;
+                rb.useGravity = true;
+
+                // NEW: Explicit center of mass control for better stability
+                rb.centerOfMass = Vector3.zero;
+                rb.automaticCenterOfMass = false;
             }
         }
+
+        // NEW: Lower hips center of mass for improved stability
+        if (character.hips != null)
+        {
+            Rigidbody hipsRb = character.hips.GetRigidbody();
+            if (hipsRb != null)
+            {
+                hipsRb.centerOfMass = new Vector3(0, -0.2f, 0);
+            }
+        }
+
+        Debug.Log($"[ActiveRagdollBalancer] ✓ Configured {allBones.Length} bones with improved COM");
     }
 
     private void FixedUpdate()
     {
+        frameCount++;
+
         if (character == null || !isInitialized) return;
 
-        // Stabilization period after spawn
+        bool shouldLog = logEveryFrame && (frameCount % logFrameInterval == 0);
+
+        if (shouldLog)
+        {
+            Debug.Log($"\n========== FRAME {frameCount} (Time: {Time.time:F2}s) ==========");
+        }
+
+        // Track vertical movement for jump detection
+        if (character.hips != null)
+        {
+            Rigidbody hipsRb = character.hips.GetRigidbody();
+            float currentHipsY = hipsRb.position.y;
+            float verticalVelocity = hipsRb.linearVelocity.y;
+            float deltaY = currentHipsY - lastHipsY;
+
+            if (Mathf.Abs(verticalVelocity) > maxVerticalVelocity)
+            {
+                maxVerticalVelocity = Mathf.Abs(verticalVelocity);
+            }
+
+            // Detect "jumping" - rapid upward movement
+            if (deltaY > 0.1f && verticalVelocity > 1f)
+            {
+                jumpDetectionCount++;
+                Debug.LogWarning($"⚠ JUMP DETECTED! Frame {frameCount}:");
+                Debug.LogWarning($"  Delta Y: +{deltaY:F3}m in one frame");
+                Debug.LogWarning($"  Vertical velocity: {verticalVelocity:F2} m/s");
+                Debug.LogWarning($"  Total jumps detected: {jumpDetectionCount}");
+            }
+
+            lastHipsY = currentHipsY;
+
+            if (shouldLog)
+            {
+                Debug.Log($"[HIPS STATUS]");
+                Debug.Log($"  Position: {hipsRb.position}");
+                Debug.Log($"  Velocity: {hipsRb.linearVelocity} (vertical: {verticalVelocity:F2})");
+                Debug.Log($"  Max vertical velocity seen: {maxVerticalVelocity:F2} m/s");
+            }
+        }
+
         if (isStabilizing)
         {
             stabilizationTimer += Time.fixedDeltaTime;
             if (stabilizationTimer >= initialStabilizationTime)
             {
                 isStabilizing = false;
-                Debug.Log("[ActiveRagdollBalancer] ✓ Stabilization complete - FULL movement enabled");
+                Debug.Log("[ActiveRagdollBalancer] ✓ Stabilization complete");
             }
             else
             {
-                ApplyGentleStabilization();
-                ApplyMovement();
+                if (shouldLog) Debug.Log($"[STABILIZING] {stabilizationTimer:F2}/{initialStabilizationTime:F2}s");
+                ApplyGentleStabilization(shouldLog);
+                ApplyGrounding(shouldLog);
                 return;
             }
         }
-
-        CheckForPositionChange();
 
         if (autoUpdateFootTargets)
         {
             footUpdateTimer += Time.fixedDeltaTime;
             if (footUpdateTimer >= footUpdateInterval)
             {
-                UpdateFootTargetsFromGround();
+                if (shouldLog) Debug.Log("[UPDATING FOOT TARGETS]");
+                UpdateFootTargetsFromHips(shouldLog);
                 footUpdateTimer = 0f;
             }
         }
 
-        // IMPORTANT: Apply balance and foot control BEFORE velocity limits
-        // This ensures balance forces aren't clamped
-        MaintainUpright();
-        MaintainHipHeight();
-        ControlFeet();
-        ApplyMovement();
+        MaintainUpright(shouldLog);
+        ApplyGrounding(shouldLog);
+        ControlFeet(shouldLog);
+        ApplyMovement(shouldLog);
 
-        // Apply velocity limits LAST
         if (enableVelocityLimits)
         {
-            LimitVelocities();
+            LimitVelocities(shouldLog);
+        }
+
+        lastHipsPosition = character.hips.transform.position;
+
+        if (shouldLog)
+        {
+            Debug.Log($"========== END FRAME {frameCount} ==========\n");
         }
     }
 
-    private void ApplyGentleStabilization()
+    private void ApplyGrounding(bool log)
     {
         if (character.hips == null) return;
 
         Rigidbody hipsRb = character.hips.GetRigidbody();
         if (hipsRb == null) return;
 
-        Vector3 horizontalVel = new Vector3(hipsRb.linearVelocity.x, 0, hipsRb.linearVelocity.z);
-        Vector3 verticalVel = new Vector3(0, hipsRb.linearVelocity.y, 0);
+        float currentHipsHeight = hipsRb.position.y - currentGroundLevel;
+        float heightError = currentHipsHeight - targetHipsHeight;
 
-        hipsRb.linearVelocity = horizontalVel + verticalVel * 0.9f;
+        if (log && logGrounding)
+        {
+            Debug.Log($"[GROUNDING]");
+            Debug.Log($"  Hips Y: {hipsRb.position.y:F3}");
+            Debug.Log($"  Ground level: {currentGroundLevel:F3}");
+            Debug.Log($"  Current height: {currentHipsHeight:F3}m, Target: {targetHipsHeight:F3}m");
+            Debug.Log($"  Error: {heightError:F3}m");
+        }
+
+        if (heightError > maxGroundDistance)
+        {
+            float forceMagnitude = heightError * groundingForce;
+            Vector3 downForce = Vector3.down * forceMagnitude;
+            hipsRb.AddForce(downForce, ForceMode.Force);
+
+            if (log && logGrounding)
+            {
+                Debug.Log($"  ⬇ TOO HIGH! Force: {forceMagnitude:F0}N");
+            }
+
+            // Dampen upward velocity
+            if (hipsRb.linearVelocity.y > 0)
+            {
+                Vector3 dampForce = Vector3.down * hipsRb.linearVelocity.y * 200f;
+                hipsRb.AddForce(dampForce, ForceMode.Force);
+            }
+        }
+        else if (heightError < -maxGroundDistance)
+        {
+            float forceMagnitude = -heightError * groundingForce * 0.5f;
+            Vector3 upForce = Vector3.up * forceMagnitude;
+            hipsRb.AddForce(upForce, ForceMode.Force);
+
+            if (log && logGrounding)
+            {
+                Debug.Log($"  ⬆ TOO LOW! Force: {forceMagnitude:F0}N");
+            }
+        }
+        else if (log && logGrounding)
+        {
+            Debug.Log($"  ✓ Height OK");
+        }
+    }
+
+    private void ApplyGentleStabilization(bool log)
+    {
+        if (character.hips == null) return;
+
+        Rigidbody hipsRb = character.hips.GetRigidbody();
+        if (hipsRb == null) return;
+
+        hipsRb.linearVelocity *= 0.95f;
         hipsRb.angularVelocity *= 0.95f;
 
         Vector3 currentUp = hipsRb.transform.up;
@@ -161,11 +360,12 @@ public class ActiveRagdollBalancer : MonoBehaviour
 
         if (angle > 5f)
         {
-            hipsRb.AddTorque(axis.normalized * angle * 10f, ForceMode.Force); // INCREASED from 5
+            Vector3 torque = axis.normalized * angle * 10f;
+            hipsRb.AddTorque(torque, ForceMode.Force);
         }
     }
 
-    private void LimitVelocities()
+    private void LimitVelocities(bool log)
     {
         RagdollBone[] allBones = new RagdollBone[]
         {
@@ -174,6 +374,7 @@ public class ActiveRagdollBalancer : MonoBehaviour
             character.rightUpperLeg, character.rightLowerLeg, character.rightFoot
         };
 
+        int clampedCount = 0;
         foreach (RagdollBone bone in allBones)
         {
             if (bone == null) continue;
@@ -181,101 +382,156 @@ public class ActiveRagdollBalancer : MonoBehaviour
             Rigidbody rb = bone.GetRigidbody();
             if (rb == null) continue;
 
+            bool wasClamped = false;
+
             if (rb.linearVelocity.magnitude > maxVelocity)
             {
                 rb.linearVelocity = rb.linearVelocity.normalized * maxVelocity;
+                wasClamped = true;
             }
 
             if (rb.angularVelocity.magnitude > maxAngularVelocity)
             {
                 rb.angularVelocity = rb.angularVelocity.normalized * maxAngularVelocity;
+                wasClamped = true;
             }
+
+            if (wasClamped) clampedCount++;
         }
-    }
 
-    private void CheckForPositionChange()
-    {
-        if (character.hips == null) return;
-
-        Vector3 currentHipsPos = character.hips.transform.position;
-        float distanceMoved = Vector3.Distance(currentHipsPos, lastHipsPosition);
-
-        if (distanceMoved > positionChangeThreshold)
+        if (log && clampedCount > 0)
         {
-            Debug.Log($"[ActiveRagdollBalancer] Character moved {distanceMoved:F2} units - resetting stabilization");
-
-            ResetAllVelocities();
-            UpdateFootTargetsFromGround();
-            footUpdateTimer = 0f;
-
-            isStabilizing = true;
-            stabilizationTimer = 0f;
-        }
-
-        lastHipsPosition = currentHipsPos;
-    }
-
-    private void ResetAllVelocities()
-    {
-        RagdollBone[] allBones = GetComponentsInChildren<RagdollBone>();
-
-        foreach (RagdollBone bone in allBones)
-        {
-            Rigidbody rb = bone.GetRigidbody();
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
+            Debug.Log($"[VELOCITY LIMIT] Clamped {clampedCount} bones");
         }
     }
 
-    private void UpdateFootTargetsFromGround()
+    private void UpdateFootTargetsFromHips(bool log)
     {
         if (character.hips == null) return;
 
         Vector3 hipsPos = character.hips.transform.position;
         Vector3 hipsRight = character.hips.transform.right;
 
-        Vector3 leftFootDesiredPos = hipsPos + hipsRight * -footSpacing;
-        Vector3 rightFootDesiredPos = hipsPos + hipsRight * footSpacing;
+        Vector3 leftFootHorizontalPos = hipsPos + hipsRight * -footSpacing;
+        Vector3 rightFootHorizontalPos = hipsPos + hipsRight * footSpacing;
 
-        Vector3 newLeftTarget = FindGroundPosition(leftFootDesiredPos);
-        Vector3 newRightTarget = FindGroundPosition(rightFootDesiredPos);
+        Vector3 oldLeftTarget = leftFootTarget;
+        Vector3 oldRightTarget = rightFootTarget;
+        float oldGroundLevel = currentGroundLevel;
 
-        if (newLeftTarget != Vector3.zero)
+        Vector3 newLeftTarget = FindGroundBelowHips(leftFootHorizontalPos, "LEFT UPDATE");
+        Vector3 newRightTarget = FindGroundBelowHips(rightFootHorizontalPos, "RIGHT UPDATE");
+
+        // IMPROVED: Adaptive smoothing based on frame count
+        float smoothingFactor = frameCount < 100 ? earlySmoothingFactor : normalSmoothingFactor;
+        float minTargetHeight = -10f;
+        float maxTargetHeight = hipsPos.y - 1f;
+
+        // Validate and smooth left target
+        if (newLeftTarget.y < minTargetHeight || newLeftTarget.y > maxTargetHeight)
         {
-            leftFootTarget = newLeftTarget + Vector3.up * footHeightOffset;
+            Debug.LogError($"[LEFT TARGET REJECTED] Invalid height: {newLeftTarget.y:F2}");
+            newLeftTarget = oldLeftTarget;
+        }
+        else if (Vector3.Distance(newLeftTarget, oldLeftTarget) > maxTargetJump)
+        {
+            if (log)
+            {
+                Debug.LogWarning($"[LEFT TARGET SMOOTHED] Jump: {Vector3.Distance(newLeftTarget, oldLeftTarget):F2}m, factor: {smoothingFactor:P0}");
+            }
+            newLeftTarget = Vector3.Lerp(oldLeftTarget, newLeftTarget, smoothingFactor);
         }
 
-        if (newRightTarget != Vector3.zero)
+        // Validate and smooth right target
+        if (newRightTarget.y < minTargetHeight || newRightTarget.y > maxTargetHeight)
         {
-            rightFootTarget = newRightTarget + Vector3.up * footHeightOffset;
+            Debug.LogError($"[RIGHT TARGET REJECTED] Invalid height: {newRightTarget.y:F2}");
+            newRightTarget = oldRightTarget;
+        }
+        else if (Vector3.Distance(newRightTarget, oldRightTarget) > maxTargetJump)
+        {
+            if (log)
+            {
+                Debug.LogWarning($"[RIGHT TARGET SMOOTHED] Jump: {Vector3.Distance(newRightTarget, oldRightTarget):F2}m, factor: {smoothingFactor:P0}");
+            }
+            newRightTarget = Vector3.Lerp(oldRightTarget, newRightTarget, smoothingFactor);
+        }
+
+        leftFootTarget = newLeftTarget;
+        rightFootTarget = newRightTarget;
+
+        currentGroundLevel = (leftFootTarget.y + rightFootTarget.y) / 2f;
+
+        if (log)
+        {
+            Debug.Log($"[FOOT TARGET UPDATE]");
+            Debug.Log($"  Left delta: {(leftFootTarget.y - oldLeftTarget.y):F3}m");
+            Debug.Log($"  Right delta: {(rightFootTarget.y - oldRightTarget.y):F3}m");
+            Debug.Log($"  Ground level delta: {(currentGroundLevel - oldGroundLevel):F3}m");
         }
     }
 
-    private Vector3 FindGroundPosition(Vector3 position)
+    // OPTIMIZED: Uses RaycastNonAlloc to avoid memory allocation
+    private Vector3 FindGroundBelowHips(Vector3 horizontalPosition, string debugLabel)
     {
-        Vector3 rayStart = position + Vector3.up * 2f;
+        if (character.hips == null) return horizontalPosition;
 
-        if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, groundRaycastDistance, groundLayer))
+        Vector3 rayStart = new Vector3(
+            horizontalPosition.x,
+            character.hips.transform.position.y,
+            horizontalPosition.z
+        );
+
+        int hitCount = Physics.RaycastNonAlloc(rayStart, Vector3.down, raycastHitCache, groundRaycastDistance, groundLayer);
+
+        if (logRaycast)
         {
-            return hit.point;
+            Debug.Log($"[RAYCAST {debugLabel}] Origin: {rayStart}, Hits: {hitCount}");
         }
 
-        if (character.hips != null)
+        // Sort hits by distance (closest first) - only sort the valid portion
+        System.Array.Sort(raycastHitCache, 0, hitCount, System.Collections.Generic.Comparer<RaycastHit>.Create((a, b) => a.distance.CompareTo(b.distance)));
+
+        // Find the first hit that is NOT part of the character
+        for (int i = 0; i < hitCount; i++)
         {
-            rayStart = new Vector3(position.x, character.hips.transform.position.y + 1f, position.z);
-            if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit2, groundRaycastDistance, groundLayer))
+            RaycastHit hit = raycastHitCache[i];
+            bool isCharacterCollider = false;
+
+            foreach (Collider characterCol in characterColliders)
             {
-                return hit2.point;
+                if (hit.collider == characterCol)
+                {
+                    isCharacterCollider = true;
+                    if (logRaycast)
+                    {
+                        Debug.Log($"    ⊗ Ignoring {hit.collider.gameObject.name}");
+                    }
+                    break;
+                }
+            }
+
+            if (!isCharacterCollider)
+            {
+                Vector3 groundPos = hit.point + Vector3.up * footHeightOffset;
+
+                if (logRaycast)
+                {
+                    Debug.Log($"    ✓ GROUND: {hit.collider.gameObject.name} at {groundPos}");
+                }
+
+                return groundPos;
             }
         }
 
-        return Vector3.zero;
+        // No ground found - fallback
+        Vector3 fallback = rayStart + Vector3.down * 3f;
+        Debug.LogError($"[{debugLabel}] ❌ NO GROUND FOUND! Using fallback: {fallback}");
+
+        return fallback;
     }
 
-    private void MaintainUpright()
+    private void MaintainUpright(bool log)
     {
         Rigidbody hipsRb = character.hips.GetRigidbody();
         if (hipsRb == null) return;
@@ -286,15 +542,19 @@ public class ActiveRagdollBalancer : MonoBehaviour
         Vector3 axis = Vector3.Cross(currentUp, targetUp);
         float angle = Vector3.Angle(currentUp, targetUp);
 
-        // Apply torque even for small angles for constant correction
-        if (angle > 0.5f) // REDUCED threshold from 2f
+        if (angle > 0.5f)
         {
             Vector3 torque = axis.normalized * angle * balanceStrength;
             Vector3 damping = hipsRb.angularVelocity * balanceDamping;
             hipsRb.AddTorque(torque - damping, ForceMode.Force);
+
+            if (log && angle > 10f)
+            {
+                Debug.Log($"[BALANCE] Hips tilted {angle:F1}°");
+            }
         }
 
-        // Also balance spine and chest for better stability
+        // Spine balance
         if (character.spine != null)
         {
             Rigidbody spineRb = character.spine.GetRigidbody();
@@ -309,7 +569,7 @@ public class ActiveRagdollBalancer : MonoBehaviour
             }
         }
 
-        // NEW: Also stabilize chest
+        // Chest balance
         if (character.chest != null)
         {
             Rigidbody chestRb = character.chest.GetRigidbody();
@@ -325,84 +585,106 @@ public class ActiveRagdollBalancer : MonoBehaviour
         }
     }
 
-    private void MaintainHipHeight()
+    private void ControlFeet(bool log)
     {
-        Rigidbody hipsRb = character.hips.GetRigidbody();
-        if (hipsRb == null) return;
-
-        float leftFootActualY = character.leftFoot.transform.position.y;
-        float rightFootActualY = character.rightFoot.transform.position.y;
-        float avgFootHeight = (leftFootActualY + rightFootActualY) / 2f;
-
-        float targetHeight = avgFootHeight + hipHeightTarget;
-        float currentHeight = hipsRb.position.y;
-        float heightError = targetHeight - currentHeight;
-
-        float forceMagnitude = Mathf.Clamp(heightError * hipHeightForce, -hipHeightForce * 2f, hipHeightForce * 2f);
-        Vector3 heightForce = Vector3.up * forceMagnitude;
-
-        Vector3 verticalDamping = Vector3.up * hipsRb.linearVelocity.y * balanceDamping * 0.5f; // Increased damping multiplier
-
-        hipsRb.AddForce(heightForce - verticalDamping, ForceMode.Force);
+        ApplyFootIK(character.leftFoot, leftFootTarget, ref leftFootPlanted, true, log);
+        ApplyFootIK(character.rightFoot, rightFootTarget, ref rightFootPlanted, false, log);
     }
 
-    private void ControlFeet()
-    {
-        ApplyFootIK(character.leftFoot, leftFootTarget, ref leftFootPlanted);
-        ApplyFootIK(character.rightFoot, rightFootTarget, ref rightFootPlanted);
-    }
-
-    private void ApplyFootIK(RagdollBone foot, Vector3 target, ref bool planted)
+    // IMPROVED: Checks if animator is controlling the foot before applying forces
+    private void ApplyFootIK(RagdollBone foot, Vector3 target, ref bool planted, bool isLeftFoot, bool log)
     {
         if (foot == null) return;
 
         Rigidbody footRb = foot.GetRigidbody();
+        if (footRb == null) return;
+
+        // NEW: Check if animator is controlling this foot (prevents force conflicts)
+        if (animator != null && animator.enabled && animator.IsFootStepping(isLeftFoot))
+        {
+            if (log && logFootIK)
+            {
+                Debug.Log($"[FOOT IK - {(isLeftFoot ? "LEFT" : "RIGHT")}] ⊗ Animator in control, skipping IK");
+            }
+            return;
+        }
+
         Vector3 toTarget = target - footRb.position;
         float distance = toTarget.magnitude;
+        float verticalOffset = footRb.position.y - target.y;
 
-        if (planted && distance < 2f)
+        if (log && logFootIK)
+        {
+            Debug.Log($"[FOOT IK - {(isLeftFoot ? "LEFT" : "RIGHT")}]");
+            Debug.Log($"  Distance: {distance:F3}m, Vertical offset: {verticalOffset:F3}m");
+        }
+
+        if (planted)
         {
             Vector3 plantForce = toTarget * footPlantForce;
             Vector3 dampingForce = -footRb.linearVelocity * footDamping;
 
-            footRb.AddForce(plantForce + dampingForce, ForceMode.Force);
+            // NEW: Clamp total force to prevent spikes
+            Vector3 totalForce = plantForce + dampingForce;
+            totalForce = Vector3.ClampMagnitude(totalForce, footMaxForce);
 
+            footRb.AddForce(totalForce, ForceMode.Force);
+
+            if (log && logFootIK && logForces)
+            {
+                Debug.Log($"  Total force: {totalForce.magnitude:F0}N (clamped at {footMaxForce}N)");
+
+                if (totalForce.magnitude >= footMaxForce * 0.9f)
+                {
+                    Debug.LogWarning($"    ⚠ Force near maximum!");
+                }
+            }
+
+            // Horizontal friction
+            Vector3 horizontalVel = new Vector3(footRb.linearVelocity.x, 0, footRb.linearVelocity.z);
+            if (horizontalVel.magnitude > 0.1f)
+            {
+                Vector3 frictionForce = -horizontalVel.normalized * footFriction;
+                footRb.AddForce(frictionForce, ForceMode.Force);
+            }
+
+            // Foot leveling
             Vector3 footUp = footRb.transform.up;
             Vector3 axis = Vector3.Cross(footUp, Vector3.up);
             float angle = Vector3.Angle(footUp, Vector3.up);
 
-            if (angle > 0.5f) // REDUCED from 2f for constant correction
+            if (angle > 0.5f)
             {
                 Vector3 levelingTorque = axis.normalized * angle * footLevelingTorque;
                 Vector3 angularDamping = -footRb.angularVelocity * footDamping;
-
                 footRb.AddTorque(levelingTorque + angularDamping, ForceMode.Force);
             }
         }
     }
 
-    private void ApplyMovement()
+    private void ApplyMovement(bool log)
     {
-        if (targetVelocity.magnitude < 0.01f)
-        {
-            return;
-        }
+        if (targetVelocity.magnitude < 0.01f) return;
 
         Rigidbody hipsRb = character.hips.GetRigidbody();
         if (hipsRb == null || hipsRb.isKinematic) return;
 
-        // Apply movement force
         Vector3 currentHorizontalVel = new Vector3(hipsRb.linearVelocity.x, 0, hipsRb.linearVelocity.z);
         Vector3 velocityError = targetVelocity - currentHorizontalVel;
 
         Vector3 force = velocityError * movementForce;
         hipsRb.AddForce(force, ForceMode.Force);
 
-        // REDUCED lean to prevent tipping
+        // Lean into movement
         Vector3 moveDir = targetVelocity.normalized;
-        float leanAngle = targetVelocity.magnitude * 0.5f; // REDUCED from 2f
+        float leanAngle = targetVelocity.magnitude * 0.3f;
         Vector3 leanTorque = Vector3.Cross(hipsRb.transform.up, moveDir) * leanAngle;
         hipsRb.AddTorque(leanTorque, ForceMode.Force);
+
+        if (log)
+        {
+            Debug.Log($"[MOVEMENT] Force: {force.magnitude:F0}N");
+        }
     }
 
     public void SetTargetVelocity(Vector3 velocity)
@@ -420,17 +702,38 @@ public class ActiveRagdollBalancer : MonoBehaviour
         {
             rightFootTarget = position;
         }
+
+        currentGroundLevel = (leftFootTarget.y + rightFootTarget.y) / 2f;
     }
 
     public void ForceUpdateFootTargets()
     {
-        UpdateFootTargetsFromGround();
+        UpdateFootTargetsFromHips(true);
+    }
+
+    // NEW: Public method to check if foot is being controlled by balancer
+    public bool IsFootControlledByBalancer(bool isLeftFoot)
+    {
+        return isLeftFoot ? leftFootPlanted : rightFootPlanted;
     }
 
     private void OnDrawGizmos()
     {
-        if (!Application.isPlaying || !isInitialized) return;
+        if (!Application.isPlaying || !isInitialized || character == null) return;
 
+        // Ground plane
+        Gizmos.color = new Color(0, 1, 0, 0.2f);
+        Vector3 groundCenter = character.hips != null ?
+            new Vector3(character.hips.transform.position.x, currentGroundLevel, character.hips.transform.position.z) :
+            Vector3.zero;
+        Gizmos.DrawCube(groundCenter, new Vector3(5f, 0.02f, 5f));
+
+        // Target height
+        Gizmos.color = Color.magenta;
+        float targetY = currentGroundLevel + targetHipsHeight;
+        Gizmos.DrawWireCube(new Vector3(groundCenter.x, targetY, groundCenter.z), new Vector3(1f, 0.1f, 1f));
+
+        // Foot targets
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(leftFootTarget, 0.1f);
         Gizmos.DrawLine(leftFootTarget, leftFootTarget + Vector3.up * 0.2f);
@@ -439,25 +742,22 @@ public class ActiveRagdollBalancer : MonoBehaviour
         Gizmos.DrawWireSphere(rightFootTarget, 0.1f);
         Gizmos.DrawLine(rightFootTarget, rightFootTarget + Vector3.up * 0.2f);
 
-        if (character != null && character.leftFoot != null && character.rightFoot != null)
+        if (character.leftFoot != null && character.rightFoot != null)
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(character.leftFoot.transform.position, 0.08f);
             Gizmos.DrawWireSphere(character.rightFoot.transform.position, 0.08f);
 
-            Gizmos.color = Color.magenta;
+            Gizmos.color = character.leftFoot.transform.position.y > leftFootTarget.y ? Color.green : Color.red;
             Gizmos.DrawLine(character.leftFoot.transform.position, leftFootTarget);
+
+            Gizmos.color = character.rightFoot.transform.position.y > rightFootTarget.y ? Color.green : Color.red;
             Gizmos.DrawLine(character.rightFoot.transform.position, rightFootTarget);
 
             if (character.hips != null)
             {
-                Vector3 hipsRight = character.hips.transform.right;
-                Vector3 leftRayStart = character.hips.transform.position + hipsRight * -footSpacing + Vector3.up * 2f;
-                Vector3 rightRayStart = character.hips.transform.position + hipsRight * footSpacing + Vector3.up * 2f;
-
-                Gizmos.color = new Color(0, 1, 1, 0.3f);
-                Gizmos.DrawLine(leftRayStart, leftRayStart + Vector3.down * groundRaycastDistance);
-                Gizmos.DrawLine(rightRayStart, rightRayStart + Vector3.down * groundRaycastDistance);
+                Gizmos.color = Color.blue;
+                Gizmos.DrawWireSphere(character.hips.transform.position, 0.15f);
 
                 if (targetVelocity.magnitude > 0.01f)
                 {
@@ -465,25 +765,6 @@ public class ActiveRagdollBalancer : MonoBehaviour
                     Gizmos.DrawRay(character.hips.transform.position, targetVelocity.normalized * 2f);
                 }
             }
-        }
-
-        if (character != null && character.hips != null)
-        {
-            float leftFootY = character.leftFoot.transform.position.y;
-            float rightFootY = character.rightFoot.transform.position.y;
-            float avgFootHeight = (leftFootY + rightFootY) / 2f;
-
-            Vector3 targetHipPos = new Vector3(
-                character.hips.transform.position.x,
-                avgFootHeight + hipHeightTarget,
-                character.hips.transform.position.z
-            );
-
-            Gizmos.color = isStabilizing ? Color.red : Color.green;
-            Gizmos.DrawWireCube(targetHipPos, Vector3.one * 0.2f);
-
-            Gizmos.color = new Color(0, 1, 0, 0.5f);
-            Gizmos.DrawLine(character.hips.transform.position, targetHipPos);
         }
     }
 }

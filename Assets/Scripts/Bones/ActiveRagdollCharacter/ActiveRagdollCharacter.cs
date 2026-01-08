@@ -4,6 +4,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Active ragdoll character built from voxel cubes
 /// Uses physics-based balance and procedural IK for feet
+/// SIMPLIFIED: Everything moves together as one hierarchy
 /// </summary>
 public class ActiveRagdollCharacter : MonoBehaviour
 {
@@ -54,13 +55,10 @@ public class ActiveRagdollCharacter : MonoBehaviour
             return;
         }
 
-        // Create skeleton hierarchy
+        // Simple approach: Just build skeleton as child hierarchy
+        // No separate skeleton root needed!
         CreateBoneHierarchy();
-
-        // Build voxel visuals for each bone
         BuildVoxelVisuals();
-
-        // Setup physics joints
         SetupPhysicsJoints();
 
         isBuilt = true;
@@ -71,7 +69,7 @@ public class ActiveRagdollCharacter : MonoBehaviour
     {
         float unit = cubeUnit;
 
-        // Hips (root - no parent)
+        // Hips (root of skeleton - direct child of this GameObject)
         hips = CreateBone("Hips", Vector3.zero, null,
             new Vector3(unit * 1.5f, unit * 0.8f, unit), boneMass * 3f);
 
@@ -139,6 +137,7 @@ public class ActiveRagdollCharacter : MonoBehaviour
         }
         else
         {
+            // Root bone (hips) - parent directly to this GameObject
             boneObj.transform.SetParent(transform);
             boneObj.transform.localPosition = localPos;
         }
@@ -168,15 +167,13 @@ public class ActiveRagdollCharacter : MonoBehaviour
         CreateJoint(neck, chest, new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
         CreateJoint(head, neck, new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
 
-        // Leg joints (hips)
+        // Leg joints
         CreateJoint(leftUpperLeg, hips, new Vector3(-90, -45, -30), new Vector3(30, 45, 30));
         CreateJoint(rightUpperLeg, hips, new Vector3(-90, -45, -30), new Vector3(30, 45, 30));
 
-        // Knee joints
         CreateJoint(leftLowerLeg, leftUpperLeg, new Vector3(0, -10, -10), new Vector3(120, 10, 10));
         CreateJoint(rightLowerLeg, rightUpperLeg, new Vector3(0, -10, -10), new Vector3(120, 10, 10));
 
-        // Ankle joints
         CreateJoint(leftFoot, leftLowerLeg, new Vector3(-30, -20, -20), new Vector3(30, 20, 20));
         CreateJoint(rightFoot, rightLowerLeg, new Vector3(-30, -20, -20), new Vector3(30, 20, 20));
 
@@ -187,11 +184,9 @@ public class ActiveRagdollCharacter : MonoBehaviour
         CreateJoint(leftUpperArm, leftShoulder, new Vector3(-90, -45, -80), new Vector3(90, 45, 80));
         CreateJoint(rightUpperArm, rightShoulder, new Vector3(-90, -45, -80), new Vector3(90, 45, 80));
 
-        // Elbow joints
         CreateJoint(leftForearm, leftUpperArm, new Vector3(-120, -10, -10), new Vector3(0, 10, 10));
         CreateJoint(rightForearm, rightUpperArm, new Vector3(-120, -10, -10), new Vector3(0, 10, 10));
 
-        // Wrist joints
         CreateJoint(leftHand, leftForearm, new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
         CreateJoint(rightHand, rightForearm, new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
     }
@@ -209,12 +204,10 @@ public class ActiveRagdollCharacter : MonoBehaviour
         joint.axis = Vector3.right;
         joint.secondaryAxis = Vector3.up;
 
-        // Lock position
         joint.xMotion = ConfigurableJointMotion.Locked;
         joint.yMotion = ConfigurableJointMotion.Locked;
         joint.zMotion = ConfigurableJointMotion.Locked;
 
-        // Set angular limits
         joint.angularXMotion = ConfigurableJointMotion.Limited;
         joint.angularYMotion = ConfigurableJointMotion.Limited;
         joint.angularZMotion = ConfigurableJointMotion.Limited;
@@ -233,7 +226,6 @@ public class ActiveRagdollCharacter : MonoBehaviour
         limitYZ.limit = highLimits.z;
         joint.angularZLimit = limitYZ;
 
-        // Spring and damping
         JointDrive drive = new JointDrive();
         drive.positionSpring = jointSpring;
         drive.positionDamper = jointDamper;

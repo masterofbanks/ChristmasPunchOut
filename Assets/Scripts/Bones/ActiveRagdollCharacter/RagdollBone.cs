@@ -2,7 +2,7 @@ using UnityEngine;
 
 /// <summary>
 /// Individual bone in the active ragdoll system
-/// Combines rigidbody physics with voxel visualization
+/// FIXED: Increased damping to prevent floating
 /// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class RagdollBone : MonoBehaviour
@@ -16,7 +16,6 @@ public class RagdollBone : MonoBehaviour
     private Rigidbody rb;
     private BoxCollider col;
 
-    // Target rotation for active pose control
     public Quaternion targetLocalRotation = Quaternion.identity;
 
     public void Initialize(Vector3 boneSize, float boneMass, float voxSize, Material mat, bool combineMesh)
@@ -30,10 +29,11 @@ public class RagdollBone : MonoBehaviour
         // Setup rigidbody
         rb = GetComponent<Rigidbody>();
         rb.mass = mass;
-        rb.linearDamping = 0.1f;
+        rb.linearDamping = 1f; // INCREASED from 0.1f - prevents floating!
         rb.angularDamping = 5f;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        rb.useGravity = true; // EXPLICIT: Ensure gravity is ON
 
         // Setup collider
         col = gameObject.AddComponent<BoxCollider>();

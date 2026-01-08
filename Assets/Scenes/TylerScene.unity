@@ -1203,14 +1203,14 @@ MonoBehaviour:
   boneMass: 1
   jointSpring: 5000
   jointDamper: 500
-  balanceStrength: 1000
-  hipHeightTarget: 1.5
+  enableProceduralAnimation: 1
+  animationInfluence: 0.7
   groundRaycastHeight: 10
   footSpacing: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  footHeightOffset: 0.05
+  characterHeight: 8
   setupCameraFollow: 1
   createCameraIfMissing: 0
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
@@ -1416,6 +1416,66 @@ MonoBehaviour:
   rotationSpeed: 10
   useGravity: 1
   gravityMultiplier: 1
+--- !u!1 &1545697703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545697707}
+  - component: {fileID: 1545697708}
+  m_Layer: 0
+  m_Name: ActiveRagdollV2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1545697707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545697703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1545697708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545697703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8eb2710e7d9ad4c89f5b78237f30de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnOffset: {x: 0, y: 0, z: 0}
+  spawnOnStart: 1
+  cubeUnit: 1
+  bodyMaterial: {fileID: 0}
+  boneMass: 1
+  groundRaycastHeight: 10
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  spawnHeightAboveGround: 5
+  hipBalanceTorque: 1500
+  legStiffnessTorque: 3000
+  comBalanceTorque: 800
+  comTargetOffsetForward: 0.1
+  showDebugLogs: 1
+  showGroundDetectionGizmos: 1
 --- !u!1 &1620577619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,3 +1768,4 @@ SceneRoots:
   - {fileID: 1713302125}
   - {fileID: 1620577621}
   - {fileID: 1253549957}
+  - {fileID: 1545697707}
